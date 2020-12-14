@@ -1,0 +1,861 @@
+Notas de prensa actualidad médica y farmacéutica, salud, medicina. | Farmanews.com 
+ 
+ === Header === 
+ 
+  Topbar  
+ 
+ 
+ 
+ 
+ 
+  Registrarse 
+  Recordar contraseña 
+   Aviso legal 
+  <li><a href="https://www.farmanews.com/site/map"><i class="fa fa-sitemap"></i>  Mapa del sitio</i></a></li>  
+  Contactar 
+ 
+ 
+ 
+ 
+ 
+  End Topbar  
+  Imagen  
+ 
+ 
+ 
+ 
+ 
+ 
+  Inline Form  
+ 
+ 
+ Iniciar sesión 
+ 
+ 
+  End Inline Form  
+ 
+ 
+ 
+  End Imagen  
+  Navbar  
+ 
+ 
+  Brand and toggle get grouped for better mobile display  
+ 
+ 
+ Toggle navigation 
+ 
+ 
+ 
+  Collect the nav links, forms, and other content for toggling  
+ 
+ 
+ 
+  Home  
+   Destacados  
+   Actualidad  
+   Notas de Prensa  
+   Convocatorias  
+   Archivo  
+  Search Block  
+   Buscador  
+ 
+ 
+ 
+ 
+ 
+ 
+ Ir 
+ 
+ 
+ 
+ 
+ 
+  End Search Block  
+ 
+ /navbar-collapse 
+ 
+ 
+  End Navbar  
+ 
+ === End Header === 
+  Modal iniciar sesion  
+ 
+ 
+ 
+ 
+ 
+ 
+ Iniciar sesión 
+ 
+ Usuario 
+ 
+ 
+ 
+ Contraseña 
+ 
+ 
+ 
+ Acceder 
+ Recordar contraseña 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Registrarse 
+ Cerrar 
+ 
+  /.modal-content  
+  /.modal-dialog  
+  /.modal  
+ === Content Part === 
+ 
+ 
+ 
+ Notas de Prensa   
+ 
+ 
+ 
+ Enfermedades digestivas.  14 de diciembre de 2020                             
+ Hasta el 52% de los pacientes COVID-19 ingresados presentan disfagia, síntoma que potencia la desnutrición con una pérdida de 10 kg 
+ · La disfagia orofaríngea (DO) es un síntoma reconocido por la OMS que se caracteriza por conllevar dificultades para trasladar de manera segura y eficaz el bolo alimenticio desde la boca hasta el esófago, causando graves complicaciones, tales como la desnutrición y la deshidratación, complicaciones respiratorias y neumonía por aspiración.
+· La experiencia clínica de los últimos meses ha reflejado que hasta el 80% los pacientes COVID-19 presentan riesgo nutricional en el momento del ingreso y un 52% sufren disfagia orofaríngea.
+· En la segunda ola de la pandemia, se han establecido distintos criterios clínicos basados en el estado nutricional, el estado deglutorio y los síntomas clínicos que permiten clasificar al paciente según la severidad de la enfermedad, riesgo nutricional y dificultad deglutoria, hecho que permite lograr un mejor resultado clínico. 
+ Acceder 
+ 
+ 
+ 
+ Oncología.  14 de diciembre de 2020                             
+ Seagen anuncia la opinión positiva del Comité de Medicamentos de Uso Humano (CHMP) sobre tucatinib para el tratamiento de pacientes con cáncer de mama HER2 positivo metastásico o localmente avanzado irresecable  
+ - Recomendación positiva para la aprobación de tucatinib en la Unión Europea en base a los resultados del ensayo pivotal HER2CLIMB - 
+ Acceder 
+ 
+ 
+ 
+ Oncología.  11 de diciembre de 2020                             
+ La Escuela Andaluza de Salud Pública organiza una jornada virtual sobre los nuevos retos en el abordaje de la Leucemia Linfocítica Crónica 
+ La Escuela Andaluza de Salud Pública (EASP) ha celebrado, el encuentro virtual “Retos y perspectivas para la mejora en el Abordaje de la Leucemia linfocítica crónica” con el objetivo de exponer y analizar la innovación, los avances y la evolución que se está viviendo respecto al manejo y tratamiento de la Leucemia Linfocítica Crónica (LLC) y dar a conocer lo que se espera en un futuro en torno a esta patología 
+ Acceder 
+ 
+ 
+ 
+ Adicciones.  11 de diciembre de 2020                             
+ Expertos debaten sobre la importancia de incluir la perspectiva de género en diagnóstico y tratamiento de la Patología Dual  
+ La Sociedad Española de Patología Dual (SEPD) junto con la Red de Trastornos Adictivos (RETICS) ha celebrado hoy un evento virtual con el objetivo de tratar de sensibilizar, reducir y eliminar las barreras, desventajas y desigualdades que el género establece en diferentes ámbitos, con el foco en la Patología Dual 
+ Acceder 
+ 
+ 
+ 
+ Odontología.  11 de diciembre de 2020                             
+ El Congreso de la Salud Bucal de Sepa septuplica su audiencia 
+ El Congreso Sepa OnAir 2020, fruto de la transformación en un formato virtual del Congreso Anual de la Sociedad Española de Periodoncia (SEPA) y su Fundación, alcanza su fin, después de más de 3 meses de decenas de sesiones formativas on line y adaptadas a distintos formatos. Las cifras finales que arroja el evento no solo superan con creces las registradas en ediciones anteriores, sino que plantean algunos elementos importantes de reflexión y cambio para el futuro de los eventos congresuales. 
+ Acceder 
+ 
+ 
+ 
+ Farmacia.  10 de diciembre de 2020                             
+ FEFE advierte del desabastecimiento de algunos medicamentos por la nueva Orden de Precios de Referencia del Ministerio de Sanidad 
+ El segmento de medicamentos sin receta sigue decreciendo, debido principalmente al descenso de antigripales, inflamación de garganta, tos y descongestión de garganta 
+ Acceder 
+ 
+ 
+ 
+ Hematología.  10 de diciembre de 2020                             
+ Expertos en hematología se reúnen para abordar las novedades sobre las neoplasias linfoides en la VI Edición del curso organizado por el Instituto Catalán de Oncología con la colaboración de Takeda 
+ 
+Los expertos que se dieron cita en esta actividad de educación médica profundizaron en aspectos como el diagnóstico y tratamiento de las neoplasias linfoides, un grupo de enfermedades entre las que se encuentran todos los subtipos de linfoma de Hodgkin y de linfoma no Hodgkin
+
+ 
+
+La Dra. Anna Sureda, Jefe de Servicio y Programa de Trasplante de Progenitores Hematopoyéticos del ICO - Hospitalet, ha coordinado este curso junto con la Dra. Eva González Barca, Coordinadora de la Unidad de Linfomas y la Dra. Eva Domingo-Domènech, Jefa Clínico del ICO
+ 
+ Acceder 
+ 
+ 
+ 
+ Hematología.  10 de diciembre de 2020                             
+ Datos del ensayo APOLLO muestran que el tratamiento con la formulación subcutánea de DARZALEX® (daratumumab) consigue respuestas clínicamente significativas en pacientes con mieloma múltiple después de la primera recaída o de las posteriores  
+ Resultados presentados en ASH 2020 del primer y actualmente único tratamiento autorizado anti-CD38 por vía subcutánea, en combinación con pomalidomida y dexametasona 
+ Acceder 
+ 
+ 
+ 
+ 
+ next 
+ 
+  SUBIR  
+ 
+ Subir   
+ 
+ 
+ Subir notas de prensa y convocatorias 
+ 
+  Nota de prensa 
+  Convocatoria 
+ 
+ /who 
+ 
+  End SUBIR  
+  PROXIMAS CONVOCATORIAS  
+ Próximas convocatorias    
+ 
+ 
+ No hay próximas convocatorias 
+ Ver todas 
+ 
+ 
+ /blog-twitter 
+  End PROXIMAS CONVOCATORIAS  
+  ESPECIALIDADES  
+ Especialidades   
+ 
+ 
+ Busca notas de prensa por especialidad médica o enfermedad. 
+ 
+ 
+  Angioedema Hereditario 
+ Accidentes cerebrovasculares isquémicos 
+ Actualidad 
+ Adicciones 
+ Adiciones 
+ Administraciones 
+ Alcoholismo 
+ Alergia 
+ Alergias 
+ Alergología 
+ Alergología pediátrica 
+ Alimentación 
+ Alopecia 
+ Alzheimer 
+ Amiloidosis 
+ analítica 
+ Anatomía patológica 
+ Andrología 
+ Anestesiología 
+ Angioderma hereditario 
+ Angioedema Hereditario 
+ Angiología 
+ Anticoncepción 
+ Anticonceptivo 
+ Anticonceptivos 
+ Antimigrañosos 
+ Aparato Digestivo 
+ Aplicación móvil 
+ Apnea 
+ Apnea del sueño 
+ app 
+ Arteriosclerosis 
+ Artritis 
+ Artritis inflamatoria 
+ Artritis Psoriásica 
+ Artritis reumatoide 
+ Artrosis 
+ Asistencia sanitaria 
+ ASMA 
+ Asma infantil 
+ Asociación 
+ Asociación Cáncer 
+ Asociación médica 
+ Atención Primaria 
+ Atención Sanitaria 
+ Autismo 
+ Autocuidado 
+ Ayuda 
+ Becas 
+ Becas investigación 
+ Becas y premios 
+ Beques i premis 
+ Bioética 
+ Biomarcadores 
+ Biomateriales 
+ Biomedicina 
+ Biosimilares 
+ Biotecnología 
+ Blog 
+ Bomedicina 
+ Bronquiolitis 
+ Bronquiolitis por VRS 
+ Buenas prácticas 
+ Caida 
+ Calidad asistencial 
+ Campanya informativa 
+ Campaña 
+ Campaña solidaria  
+ Campaña VIH 
+ Cáncer 
+ Cáncer de Ovario 
+ Cáncer de pulmón 
+ Cáncer mama 
+ Cardiología 
+ cardiología, nutrición 
+ Cardiovascular 
+ Carrera solidaria 
+ Celulitis 
+ Centro Odontológico 
+ Certamen 
+ Certificación 
+ Ciencia 
+ Cirugía 
+ Cirugía estética 
+ Cirugía oftalmológica 
+ Cirugía oral 
+ Cirugía plástica 
+ Cirugía prostática 
+ Cohnwolfe 
+ Colectivo Farmacéutico 
+ Colesterol 
+ Colitis Ulcerosa 
+ COMPLEMENTOS ALIMENTICIOS  
+ Comunicación 
+ Comunicación Salud 
+ Comunicación y salud 
+ Concurso 
+ Concurso ciencia 
+ Concurso fotográfico 
+ Conferencia 
+ Conferencias 
+ Congreso 
+ Congreso de Biobancos 
+ Congreso Dermatología 
+ Congreso mundial de prevención de la diabetes  
+ Congresos 
+ Consumidor 
+ Convenio 
+ Cosmética 
+ Cuidados Intensivos 
+ Cuidados Paliativos 
+ Curso 
+ Curso Obstetricia y Neonatología 
+ Curso online 
+ Cursos 
+ Deficiencia en Piruvato Quinasa 
+ Denuncias 
+ Deontología 
+ Deporte 
+ Derechos humanos 
+ Derechos laborales 
+ Dermatitis 
+ Dermatología 
+ Dermocosmética 
+ Día Mundial del Riñón 
+ Diabetes 
+ Diabetología 
+ Diagnóstico 
+ Diagnóstico clínico 
+ Diagnóstico por imagen 
+ Diagnóstico prenatal 
+ Diálisis Peritoneal 
+ Dietética y nutrición 
+ Digestivo 
+ Directiva europea 
+ Discapacidad 
+ Dislexia 
+ Dispositivo 
+ DISTONÍA 
+ Distribución Farmacéutica 
+ Distrofia muscular de Duchenne 
+ Dolor 
+ drogodependencias 
+ Ductus arterioso persistente 
+ e-Health 
+ e-Salud 
+ Ecografía 
+ Ecología 
+ Economía 
+ Economía medicamentos 
+ Educación 
+ eHealth 
+ ELA 
+ EMO 
+ Empresa 
+ Empresas 
+ Endocrinología 
+ Endometriosis 
+ Energía renovable 
+ Enfermedad cardiovascular 
+ Enfermedad celíaca 
+ Enfermedad coronaria 
+ Enfermedad de Alzheimer 
+ Enfermedad de Crohn 
+ Enfermedad de Fabry 
+ Enfermedad de Gaucher 
+ Enfermedad de Gunther 
+ Enfermedad de Hunter 
+ Enfermedad Fabry  
+ Enfermedad hepática 
+ Enfermedad inflamatoria intestina 
+ Enfermedad inflamatoria intestinal 
+ Enfermedad meningocócica invasiva 
+ Enfermedad ósea metabólica 
+ Enfermedad periodontal  
+ Enfermedad Renal Crónica 
+ Enfermedad tromboembólica 
+ Enfermedades autoinmunes 
+ Enfermedades autoinmunes sistémicas 
+ Enfermedades cardiovasculares 
+ Enfermedades Crónicas 
+ Enfermedades de adultos 
+ Enfermedades Degenerativas 
+ Enfermedades digestivas 
+ Enfermedades genéticas 
+ Enfermedades hematológicas 
+ Enfermedades Hepáticas y Digestivas 
+ Enfermedades Hereditarias 
+ Enfermedades Infecciosas 
+ Enfermedades Infecciosas Pediátricas 
+ Enfermedades Inflamatorias 
+ Enfermedades inflamatorias autoinmunes 
+ Enfermedades inflamatorias crónicas 
+ Enfermedades lisosomales 
+ Enfermedades Mentales 
+ Enfermedades metabólicas 
+ Enfermedades Metabólicas Asociadas  
+ Enfermedades minoritarias  
+ Enfermedades minoritarias metabólicas 
+ Enfermedades mitocondriales 
+ Enfermedades Musculares 
+ Enfermedades musculoesqueléticas 
+ Enfermedades neurodegenerativas 
+ Enfermedades neurológicas 
+ Enfermedades Neuromusculares 
+ Enfermedades neuropsiquiátricas 
+ Enfermedades pulmonares 
+ Enfermedades Raras 
+ Enfermedades respiratorias 
+ Enfermedades reumáticas 
+ Enfermedades tropicales 
+ enfermedades vectoriales 
+ Enfermedades víricas 
+ Enfermería 
+ Epidemiología 
+ Epidemiología y Salud Pública 
+ Epigenética 
+ Epilepsia 
+ EPOC 
+ ERC 
+ eSalud 
+ Esclerosis Múltiple 
+ Escoliosis 
+ Espondilitis Anquilosante 
+ Espondiloartritis 
+ Estética 
+ estrés ambiental 
+ Ética 
+ ETS 
+ Farmacéutica 
+ Farmacéuticas 
+ Farmacia 
+ Farmacia asistencial 
+ Farmacia hospitalaria 
+ Farmacia, Consumer Health Care 
+ Fármaco 
+ Farmacología 
+ Farmaeconomía 
+ fenilcetonuria 
+ Ferias y congresos 
+ Fertilidad 
+ Fibromialgia 
+ Fibrosis pulmonar idopática 
+ Fibrosis Quística 
+ Fisiología Vegetal 
+ Fitoterapia 
+ Flebología 
+ Foniatría 
+ Formación 
+ Formación médica 
+ Foro 
+ Fotoprotección 
+ Gastroenterología 
+ Genética 
+ Genómica 
+ Geriatría 
+ Gestión clínica 
+ Gestión farmacia 
+ Gestión hospitalaria 
+ Gestión Sanitaria 
+ Ginecología 
+ Ginecología y Obstetrícia 
+ Ginecología, obstetricia 
+ Glaucoma 
+ Gripe 
+ Guía 
+ Healthcare Technology 
+ Hematología 
+ Hepatitis 
+ Hepatitis C 
+ Hepatología 
+ Herpes Zóster 
+ Hidrosadenitis 
+ Higiene 
+ Higiene bucal 
+ Hipertensión 
+ Hipertensión arterial 
+ Hipertensión Arterial Pulmonar 
+ Hipertensión pulmonar 
+ Hipertiroidismo 
+ Homeopatía 
+ Hospitales 
+ Ictus 
+ Implantología 
+ Incontinencia 
+ Incontinencia urinaria 
+ Industria biofarmacéutica 
+ Industria farmacéutica 
+ Infecciosas 
+ Informática Biomédica 
+ Ingeniería Hospitalaria 
+ Inmunogenicidad 
+ Inmunología 
+ Inmunoterapia 
+ Integración social 
+ Investigación 
+ Investigación biomédica 
+ Investigación Cardiovascular 
+ Investigación clínica 
+ Investigación médica 
+ Jornada 
+ Jornadas 
+ Jornadas dermatológicas 
+ Jornadas nutrición 
+ Jornades 
+ Juego 
+ Ketchum 
+ Laboral 
+ Laboratorio 
+ Legislación 
+ Lesión medular  
+ Leucemia Mieloide Crónica 
+ Licitación electrónica 
+ linguistica 
+ Lipidología 
+ lipidología, diabetología, endocrinología 
+ Lupus 
+ Manifiesto 
+ Maternidad 
+ Medicamento 
+ Medicamento biorregulador 
+ Medicamentos 
+ Medicamentos biológicos 
+ Medicamentos biotecnológicos 
+ Medicina 
+ Medicina biorreguladora 
+ Medicina crítica 
+ Medicina de género 
+ Medicina de sistemas 
+ Medicina de Urgencias y Emergencias 
+ Medicina del Deporte 
+ Medicina del Sueño 
+ Medicina deportiva 
+ Medicina deportiva, rehabilitación, fisioterapia 
+ Medicina Estética 
+ Medicina Familiar 
+ Medicina Familiar y Comunitaria 
+ Medicina general 
+ Medicina general,medicina familiar 
+ Medicina Individualizada 
+ Medicina Interna 
+ Medicina nuclar 
+ Medicina nuclear 
+ Medicina personalizada 
+ Medicina predictiva 
+ Medicina privada internet 
+ medicina regenerativa 
+ Medicina Reproductiva 
+ Medicina Respiratoria 
+ Medioambiente 
+ Menopausia 
+ Metabolómica 
+ mHealth 
+ Microbiología 
+ Microtecnologías 
+ Mieloma múltiple 
+ Muerte Súbita 
+ Muestras Biológicas 
+ Nefrología 
+ Nefropediatría 
+ Neonatología 
+ Neumología 
+ Neurociencia 
+ Neuroimagen 
+ Neurología 
+ Neuropatías 
+ Neuropsiquiatría 
+ Nuevas tecnologías 
+ Nutrición 
+ Nutrición infantil 
+ Nutrición Práctica 
+ Nutrición, alergias alimentarias 
+ Nutrición,medicina deportiva 
+ Obesidad 
+ Obstetricia 
+ Obstetricia y Ginecología 
+ Oculoplástica 
+ Odontología 
+ Odontología/ Estomatología 
+ Odontopediatría 
+ Oficina de farmacia 
+ Oftalmología 
+ Oncología 
+ Óptica 
+ Ortopedia 
+ Osteoporosis 
+ OTC 
+ Otorrino-Laringología 
+ Otorrinolaringología 
+ Oxigenoterapia 
+ Paciente anticoagulado 
+ Paciente diabético 
+ PACIENTES 
+ Pacientes crónicos 
+ Parálisis cerebral 
+ Parásitos 
+ Parkinson 
+ Patologías respiratorias 
+ Patologías reumáticas 
+ Pediatría 
+ Pediculosis 
+ Pérdida auditiva 
+ Periodismo médico 
+ Periodismo Sanitario 
+ Periodoncia 
+ Plantas medicinales 
+ Política sanitaria 
+ Portal 
+ Prematuridad  
+ Premio 
+ Premios 
+ Premios enfermería 
+ Prevención 
+ Problemas del sueño 
+ Producto 
+ Proyecto 
+ Proyectos de Investigación 
+ Proyectos Sociales 
+ Psicogeriatría 
+ Psicología 
+ Psicología y Psiquiatría 
+ Psiquiatría 
+ Psoriasis 
+ Queratosis actínica 
+ Radiología 
+ Radiología digestiva 
+ Radioterapia 
+ Rehabilitación 
+ Relaciones sociales 
+ Reproducción 
+ Reproducción asistida 
+ Residentes 
+ Respiratorio 
+ Retinosis pigmentaria 
+ Reumatología 
+ Riesgo cardiovascular 
+ Riesgos Laborales 
+ RSC 
+ RSE 
+ Rueda de prensa 
+ Running 
+ Salud 
+ Salud ambiental 
+ Salud bucal 
+ Salud bucodental 
+ Salud cardiovascular 
+ Salud Digestiva 
+ Salud digital 
+ Salud en el Trabajo 
+ Salud ginecológica 
+ Salud infantil 
+ Salud laboral 
+ Salud mental 
+ Salud mujer 
+ Salud online 
+ Salud oral 
+ Salud Pública 
+ Salud reproductiva 
+ Salud sexual 
+ Salud sexual masculina 
+ Salud y Nutrición 
+ Salud/Internet  
+ Sanidad 
+ Seguimiento del Paciente Crónico Complejo 
+ seguridad del paciente 
+ Seminario 
+ Sexología 
+ SIDA 
+ Simposio 
+ Síndrome de Down 
+ Síndrome de Hunter 
+ Síndrome de Williams 
+ Síndrome del intestino irritable 
+ Síndromes de Sobrecrecimiento 
+ Sistema sanitario 
+ SNS 
+ Sociedad 
+ Sociedades Médicas 
+ Software 
+ Solidaridad 
+ Tabaquismo 
+ Taller 
+ TDAH 
+ TDHA 
+ Tecnología 
+ Tecnología sanitaria 
+ Tecnologías sanitarias 
+ Tejidos humanos 
+ Telemedicina 
+ Telemonitorización 
+ Teleoftalmología 
+ TERAPIA CELULAR 
+ Terapias no convencionales 
+ Test genético 
+ TIC 
+ TIC salud 
+ Toxicología 
+ Trasplante 
+ Trasplante Hepático 
+ Trasplantes 
+ Trastornos del Espectro Autista 
+ Trastornos del Movimiento 
+ Tratamiento adicciones, psiquiatría 
+ Tratamiento de las infecciones respiratorias 
+ Traumatología 
+ Traumatología y Ortopedia 
+ Tromboembolismo 
+ Tuberculosis 
+ Tumores digestivos y neuroendocrinos 
+ Tumores neuroendocrinos 
+ Tumores raros 
+ Unidad Ictus 
+ Urología 
+ Urología, Trasplante 
+ Urology 
+ Uveítis 
+ Vacunación 
+ Vacunas 
+ Vacunología 
+ Varices 
+ Vasculitis infantiles 
+ Veterinaria 
+ VIH 
+ VIH/Sida 
+ Violencia de género 
+ Virología 
+ Virus del Papiloma Humano 
+ Visita médica 
+ VPH 
+ 
+ 
+ 
+ Ver todas 
+ 
+ 
+ 
+ /who 
+ 
+  End ESPECIALIDADES  
+  ARCHIVO  
+ Archivo   
+ 
+ 
+ Busca notas de prensa por su fecha de edición. 
+   Selecciona el año 
+ 
+ 
+ 
+ 2020  (1202) 
+ 2019  (1247) 
+ 2018  (1104) 
+ 2017  (1038) 
+ 2016  (875) 
+ 2015  (920) 
+ 2014  (1533) 
+ 2013  (1678) 
+ 2012  (1012) 
+ 2011  (992) 
+ 
+   2010  (486) 
+ 2009  (659) 
+ 2008  (387) 
+ 2007  (316) 
+ 2006  (200) 
+ 2005  (56) 
+ 2004  (50) 
+ 2003  (61) 
+ 2002  (56) 
+ 
+ 
+ <a href="#" rel="float-shadow" class="btn-blau pull-right btn-u rounded-2x btn-u float-shadow">Ver más</a>   
+ 
+ /who 
+ 
+  End ARCHIVO  
+ 
+ 
+ <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-546c8e4233d7bf96" async="async"></script> 
+  AddThis Button END  
+ 
+ 
+ 
+ 
+ 
+ 
+                    Copyright © 2020, Farmavet, S.L. Todos los derechos reservados.  
+                 
+ 
+ 
+ 
+                    Política de privacidad
+                 
+ 
+ 
+ 
+                    Aviso legal
+                 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  JS Global Compulsory  
+ 
+ 
+  JS Implementing Plugins  
+ 
+  Layer Slider  
+ 
+ 
+ 
+ 
+  End Layer Slider  
+  JS Page Level  
+ 
+ 
+ <script type="text/javascript" src="https://www.farmanews.com/themes/tinymce4/jquery.tinymce.min.js"></script> 
+ 
+ 
+ 
+ 
+ [if lt IE 9]>
+    <script src="https://www.farmanews.com/themes/plugins/respond.js"></script>
+<![endif] 
+  For Background Image  
+ 
+ 
+ <script src="//tinymce.cachefly.net/4.0/tinymce.min.js"></script> 
+ 
+ 
+ 
+ 

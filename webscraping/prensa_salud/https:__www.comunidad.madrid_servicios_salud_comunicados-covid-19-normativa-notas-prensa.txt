@@ -1,0 +1,690 @@
+
+          Comunicados COVID-19. Normativa y notas de prensa | Comunidad de Madrid         
+@import url("https://www.comunidad.madrid/modules/system/system.base.css?qklruh");
+ 
+@import url("https://www.comunidad.madrid/sites/all/libraries/owl-carousel/owl.carousel.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/libraries/owl-carousel/owl.theme.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/libraries/owl-carousel/owl.transitions.css?qklruh");
+ 
+@import url("https://www.comunidad.madrid/sites/all/modules/contrib/scroll_to_top/scroll_to_top.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/modules/contrib/simplenews/simplenews.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/modules/contrib/ldap/ldap_user/ldap_user.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/modules/custom/features/buscador_publicaciones/css/buscador_publicaciones.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/modules/contrib/collapsiblock/collapsiblock.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/modules/custom/custom_drpl_ckan_catalogo/css/custom_drpl_ckan_catalogo.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/modules/custom/custom_drpl_ckan_destacados_ultimos/css/custom_drpl_ckan_destacados_ultimos.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/modules/custom/custom_drpl_ckan_search/css/custom_drpl_ckan_search.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/modules/custom/custom_drpl_mapa/cssmap-europe/cssmap-europe.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/modules/contrib/date/date_api/date.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/modules/contrib/date/date_popup/themes/datepicker.1.7.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/modules/custom/features/drpl_cja_views_search/css/cja_views_search.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/modules/custom/features/drpl_ptcs_paragraphs/css/drpl_ptcs_paragraphs.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/modules/custom/features/drpl_ptcs_views_alertas/css/drpl_ptcs_views_alertas.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/modules/custom/features/drpl_ptcs_views_casos_resueltos/css/drpl_ptcs_views_casos_resueltos.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/modules/custom/features/drpl_ptcs_views_faq/css/drpl_ptcs_views_faq.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/modules/contrib/fences/field.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/modules/contrib/field_hidden/field_hidden.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/modules/custom/features/formulario_juve/css/formulario_juve.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/modules/contrib/google_appliance/theme/google_appliance.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/modules/custom/features/inforjoven_brs/css/inforjoven_brs.css?qklruh");
+@import url("https://www.comunidad.madrid/modules/node/node.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/modules/contrib/picture/picture_wysiwyg.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/modules/contrib/views/css/views.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/modules/contrib/ckeditor/css/ckeditor.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/modules/contrib/media/modules/media_wysiwyg/css/media_wysiwyg.base.css?qklruh");
+ 
+@import url("https://www.comunidad.madrid/sites/all/modules/contrib/colorbox/styles/default/colorbox_style.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/modules/contrib/ctools/css/ctools.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/modules/contrib/ldap/ldap_servers/ldap_servers.admin.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/default/files/css/menu_icons.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/modules/contrib/panels/css/panels.css?qklruh");
+ #back-top{right:40px;}#back-top span#button{background-color:#D10002;}#back-top span#button:hover{opacity:1;filter:alpha(opacity = 1);background-color:#000000;}span#link{display :none;}
+ 
+@import url("https://www.comunidad.madrid/sites/all/modules/custom/custom_drpl/plugins/layouts/twocol_15_85_stacked/twocol_15_85_stacked.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/default/files/css/taxonomy_term/1ac395bb4e479617b0dd8fe0d4ad4d82.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/modules/custom/custom_drpl/css/custom.css?qklruh");
+ 
+@import url("https://www.comunidad.madrid/sites/all/themes/drpl/css/bootstrap.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/themes/drpl/css/style.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/themes/drpl/css/admin.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/themes/drpl/css/dFront.css?qklruh");
+@import url("https://www.comunidad.madrid/sites/all/themes/drpl/css/responsive.css?qklruh");
+ 
+@import url("https://www.comunidad.madrid/sites/all/modules/contrib/open_readspeaker/open_readspeaker.css?qklruh");
+ 
+ 
+ 
+        Pasar al contenido principal       
+ 
+ 
+ 
+      <div id="skipto">
+        <a class="skip1" href="#navbar"></a>
+        <a class="skip2" href="#main"></a>
+        <a class="skip3" href="#footer"></a>
+      </div> 
+ 
+ 
+ 
+ 
+ 
+ 
+ Inicio 
+ 
+ 
+ 
+ 
+ Toggle navigation 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Servicios e información 
+ Cultura y turismo 
+ Inversión y empresa 
+ Acción de gobierno 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Formulario de búsqueda 
+   Buscar 
+ Buscar 
+ 
+ 
+ 
+   
+ 
+   
+ 
+ 
+ 
+ 
+ 
+   Servicios e información 
+ 
+ 
+ Salud 
+ 
+ 
+ Comunicados COVID-19. Normativa y notas de prensa 
+   
+ 
+ <h1 class="page-header"></h1> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ Comunicados COVID-19. Normativa y notas de prensa 
+ 
+ 
+ 
+ 
+ 
+    Class override col-sm: panel-col-fifteen  
+ 
+ 
+ 
+      Secciones     
+ 
+ Repositorio histórico de las medidas adoptadas durante la crisis sanitariaria   
+ 
+ 
+ 
+      Contenido relacionado     
+ 
+ 
+ 
+ 
+   COVID-19. Preguntas frecuentes     
+ 
+   Atención a las necesidades sociales derivadas de la pandemia por Covid-19     
+ 
+   COVID-19. Prevención y consejos para la ciudadanía     
+ 
+   2019-Nuevo Coronavirus     
+ 
+   Ventilación, climatización y COVID-19     
+ 
+   
+ 
+ 
+ 
+    Class override col-sm: panel-col-eightyfive  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ Escuchar   
+ 
+ 
+ 
+ 
+ Información actualizada de comunicados y notas informativas sobre coronavirus en la Comunidad de Madrid.     
+ 
+ 
+ 
+ 
+ 
+THIS FILE IS NOT USED AND IS HERE AS A STARTING POINT FOR CUSTOMIZATION ONLY.
+See http://api.drupal.org/api/function/theme_field/7 for details.
+After copying this file to your theme's folder and customizing it, remove this
+HTML comment.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ AVISOS 
+   
+ 
+ Medidas de contención y restricciones para la movilidad y actividad  en varios munipicios y Zonas Básicas de Salud . 
+ Modelo de justificante/certificado para entrada y salida de zonas de movilidad restringida por motivos laborales  
+ Ubicación de las zonas afectadas.   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Consulta telefónica 
+   
+ Nuevo modelo de atención no presencial de los centros de salud. Ya puedes solicitarla en tu aplicación de cita sanitaria o en cualquiera de los canales de citación. 
+   
+ Ver más información 
+ 
+ 
+ Ver vídeo informativo 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Repositorio histórico de las medidas adoptadas durante la crisis sanitariaria por la COVID-19 
+ 
+ 
+ 
+ En esta sección se encuentran las notas de prensa, comunicados, resoluciones, instrucciones o documentos organizativos de la asistencia sanitaria en la Comunidad de Madrid desde el mes de marzo desarrollados con motivo del decreto de estado de alarma por la pandemia por COVID-19. 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ Notas de prensa 
+ 
+ 
+ 
+ 
+   Nota de prensa 11/12/2020 
+ Nota de prensa 04/12/2020 
+ Nota de prensa 27/11/2020 
+ Nota de prensa 20/11/2020 
+ Nota de prensa balance de los test de antígenos 
+ Nota de prensa 13/11/2020 
+ Nota de prensa 06/11/2020 (nuevas ZBS con medidas de restricción) 
+ Nota de prensa 06/11/2020 (estudio de seroprevalencia en residencias de mayores) 
+ Nota de prensa 30/10/2020 
+ Nota de prensa 29/10/2020  (cierre perimetral) 
+ Nota de prensa 26/10/2020 
+ Nota de prensa 23/10/2020 
+ Nota de prensa 09/10/2020 
+ Nota de prensa 02/10/2020 
+ Nota de prensa 25/09/2020 
+ Nota de prensa 18/09/2020.  Nuevas medidas de contención y restricciones para la movilidad y actividad en 37 Zonas Básicas de Salud  
+ Nota de prensa 17/03/2020. Recomendaciones para propietarios de mascotas (196.96 KB) 
+ Nota de Prensa 12/03/2020, 21h. Acuerdo entre sanidad pública y privada frente al coronavirus (94.2 KB) 
+ Nota de Prensa 11/03/2020. Medidas extraordinarias en el ámbito del deporte y la actividad física (92.72 KB) 
+ Nota de prensa 11/03/2020. Cierre de teatros y aplazamiento de festivales Teatralia y FIAS (57.48 KB) 
+ Nota de prensa 10/03/2020. Servicio de atención a los ayuntamientos (130.24 KB) 
+ Nota de Prensa 11/03/2020. Medidas preventivas extraordinarias eventos deportivos, Bibliotecas, formación de empleo (64.57 KB) 
+ Nota de Prensa 10/03/2020. Medidas de limpieza transporte público (136.9 KB) 
+ Nota de prensa 09/03/2020, 21h. Medidas extraordinarias por el coronavirus (198.34 KB) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Instrucciones y resoluciones de la Consejería de Sanidad 
+ 
+ 
+ 
+ 
+   Decreto 30/2020, de 29 de octubre, de la Presidenta de la Comunidad de Madrid , por el que se establecen medidas de  limitación de entrada y salida en la Comunidad de Madrid. 
+ DECRETO 29/2020, de 26 de octubre, de la Presidenta de la Comunidad de Madrid,  en aplicación del Real Decreto 926/2020, de 25 de octubre, del Consejo de Ministros, por el que se  declara el estado de alarma . 
+ Ver órdenes  de la Consejería de Sanidad:   1177/2020,  1178/2020,     1226/2020   1262/2020 ,  1263/2020 (Corrección de errores de la 1226/2020) ,  1273/2020 ,  1274/2020,   1277/2020 (Corrección de de errores de la 1274/2020) ,  1322/2020,   1352/2020 ,  1353/2020 ,  1404/2020 (modificación de la orden 668/2020) ,  1405/2020 ,    1503/2020 ,  1504/2020 (corrección de errores de la 1466/2020),   1534/2020 ,  1576/2020 ,   1619/2020 ,   1653/2020 ,  1654/2020    y  1686/2020     (BOCM). 
+ Declaración de estado de alarma  para el territorio de 9 municipios de la Comunidad de Madrid (Real Decreto 900/2020, de 9 de octubre)  Sin efecto desde el 24 de octubre. 
+ Declaración de estado de alarma : Real Decreto 926/2020, de 25 de octubre,  por el que se declara el estado de alarma para contener la propagación de infecciones causadas por el SARSCoV-2. BOE Nº 262 
+ BOCM 01/10/2020: 
+ 
+ Orden 1262/2020,  medidas específicas de actuación para asegurar el control del cumplimiento de las obligaciones de aislamiento o cuarentena para la contención de la transmisión del COVID-19. 
+ Orden 1263/2020:  Corrección errores Orden 1226/2020 medidas COVID-19. 
+ 
+ BOCM 26/09/2020. Orden 1226/2020.  Medidas específicas temporales y excepcionales por razón de salud pública para la contención del COVID-19 en núcleos de población correspondientes a determinadas zonas básicas de salud, como consecuencia de la evolución epidemiológica. 
+ BOCM 18/09/2020. Órdenes 1177/2020 y 1178/2020.   Medidas preventivas crisis sanitaria COVID-19  y medidas específicas determinadas zonas crisis COVID-19 
+ BOCM 07/09/2020 Medidas de refuerzo de las actuaciones para evitar la propagación del coronavirus  (ORDEN 1047/2020, de 5 de septiembre, de la Consejería de Sanidad) 
+ BOCM 13/04/2020. Protocolo para la dispensación de medicamentos y productos sanitarios por las oficinas de farmacia con carácter excepcional, durante la vigencia del estado de alarma. 
+ BOCM 13/03/2020. Acuerdo del del Consejo de Gobierno, por el que se declaran días inhábiles en la Comunidad de Madrid desde el 13 al 26 de marzo de 2020. 
+ BOCM 13/03/2020. Medidas preventivas de salud pública en la Comunidad de Madrid como consecuencia de la situación y evolución del coronavirus COVID-19 
+ BOCM 12/03/2020. Resolución DG Salud Pública medidas en centros ocupacionales (99.8 KB) 
+ BOCM 12/03/2020. Medidas Extraordinarias en materia de actividad deportiva y eventos espacios culturales (102.12 KB) 
+ BOCM 12/03/2020. Resolución DG Salud Pública. Suspensión pruebas procesos selectivos HU Fuenlabrada (100.76 KB) 
+ BOCM 11/03/2020. Medidas preventivas de salud pública en la C. de Madrid como consecuencia de la situación del coronavirus (92.25 KB) 
+ Medidas preventivas y recomendaciones de salud pública consecuencia de situación y evolución coronavirus COVID-19. 9 marzo 2020 (92.02 KB) 
+ Medidas en materia de salud pública en relación con la actividad de centros de mayores (hogares y clubes). 6 de marzo 2020 (99.61 KB) 
+ Medidas en materia de salud pública en relación con las actividades formativas de los centros sanitarios. 6 de marzo 2020 (91.59 KB) 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Notas informativas sobre medidas de prevención y control 
+ 
+ 
+ 
+ 
+   Medidas para la agilización del traslado y destino final de los cadáveres ante la situación de emergencia sanitaria causada por la extensión del COVID-19 
+ Instrucciones sobre el velatorio de fallecidos por COVID-19 
+ Se habilitan otros siete hoteles medicalizados para la recuperación de pacientes afectados por coronavirus 21/03/2020 
+ Activación de los hoteles medicalizados para la recuperación de pacientes afectados por el coronavirus .  18/03/2020.  
+ Medidas extraordinarias de limpieza para aumentar la seguridad de los viajeros y trabajadores de Metro. 12/03/2020 
+ Recomendaciones sobre uso del transporte público en la Comunidad de Madrid.   11/03/2020 
+ Seguimiento telefónico desde los Centros de Salud a personas que estén en aislamiento domiciliario por coronavirus. 08/03/2020 
+ Medidas de precaución relacionadas con el brote por nuevo coronavirus en residencias de mayores. 08/03/2020 
+ Refuerzo de la atención sanitaria para hacer frente al Coronavirus. 06/03/2020; 14:45h 
+ Cierre de centros de mayores de caracter social (hogares y clubes). 06/03/2020; 17h 
+ Procedimiento de actuación para centros de la Consejería de Políticas sociales, familias, igualdad y natalidad. 06/03/2020 
+ Suspensión de las prácticas formativas en centros sanitarios. 06/03/2020; 19h 
+ Medidas de precaución relacionadas con el brote causado por el nuevo coronavirus. 05/03/2020 
+   
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Comunicados. Situación epidemiológica 
+ 
+ 
+ 
+ 
+   
+ Comunicados. Situación epidemiológica 
+ 
+ 
+ 
+   
+ 14 de marzo 13:15 horas 
+ 13 de marzo. 19:00h 
+ 13 de marzo. 13:30h 
+ 12 de marzo. 12 horas 
+ 11 de marzo. 11:30 horas 
+ 10 de marzo. 19 horas 
+ 10 de marzo. 12 horas 
+ 09 de marzo. 11:15h 
+ 08 de marzo, 11:45h 
+ 07 de marzo. 11:00h 
+ 06 de marzo. 10:15h 
+ 05 de marzo. 11:00h 
+ 04 de marzo. :12:30h 
+ 03 de marzo. 11:45h 
+ 02 de marzo. 11:30h 
+ 01 de marzo. 13:00h 
+ 
+ 
+ 29 de febrero. 11:30h 
+ 28 de febrero. 21:45h 
+ 28 de febrero. 10:30h 
+ 27 de febrero. 11:30h 
+   
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Comunicados. Reorganización de la asistencia sanitaria.  
+ 
+ 
+ 
+ 
+   Reorganización de la atención pediátrica urgente 
+ Reorganización de la atención obstétrica/ginecológica y neonatológica urgente  
+ Información sobre las personas fallecidas por COVID-19: Teléfono 900 102 112 
+ Renovación automática de las recetas electrónicas de crónicos 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Medidas extraordinarias de contención reforzada 
+ 
+ 
+ 
+ 
+   Medidas adoptadas hasta el 13 de marzo 2020 
+ 
+ 
+ 
+ 
+ 
+ (13/03/2020) 
+ La Comunidad de Madrid ordena el  cierre de los establecimientos y comercios, excepto de alimentación y primera necesidad: 
+ 
+ Afecta a cines, discotecas, restaurantes, salas de conciertos, teatros, salones de juego, casinos, parques de atracciones, gimnasios y bares de copas 
+ Podrán  permanecer abiertos  los  supermercados, fruterías, pescaderías, carnicerías, panaderías y farmacias , entre otros. 
+ 
+ (12/03/2020) 
+ 
+ 
+ La suspensión de la  actividad física y deportiva  en todas las instalaciones dependientes de la Comunidad de Madrid de gestión directa. 
+ 
+ 
+ La suspensión de todas las actividades establecidas en todos los  programas deportivos  .de la Comunidad de Madrid 
+ 
+ 
+ La suspensión de la apertura al público de los centros dependientes y asociados 
+	de la Consejería de Cultura y Turismo, que incluyen  centros culturales, museos, teatros, otros espacios escénicos y culturales y salas de exposiciones. 
+ 
+ 
+ Suspensión de la actividad y la apertura al público de los  festivales, exposiciones 
+	y programas culturales  dependientes de la Consejería de Cultura y Turismo con independencia del espacio en el que se desarrollen. 
+ 
+ 
+ La suspensión de la apertura al público de las  oficinas de información turística 
+	dependientes de la Consejería de Cultura y Turismo. 
+ 
+ 
+ Extensión de las medidas adoptadas a las  Entidades locales  incluidas en el ámbito territorial de la Comunidad de Madrid. 
+ 
+ 
+   
+ (11/03/2020): 
+ 
+ Suspensión de  actividades colectivas  celebradas en espacios cerrados que impliquen a  más de 1.000 personas  y reducción del aforo a un tercio en las de de menos de 1.000 personas. 
+ Suspensión de la actividad formativa presencial en todas las entidades públicas o privadas que imparten  formación profesional  para el empleo, autónomos, emprendedores y entidades de economía social. 
+ Suspensión de apertura al público de la Red de  Bibliotecas Públicas  de la Comunidad de Madrid y de las  Bibliotecas de las Universidades.  
+ Realización  a puerta cerrada  de los grandes  eventos deportivos  profesionales y no profesionales, nacionales e internacionales, que tengan gran afluencia de aficionados. 
+ 
+   
+ (09/032020): 
+ 
+ Se suspende la  actividad docente  presencial en todos los niveles educativos: desde Educación Infantil hasta universidades, desde el día 11 de marzo por una duración inicial de 15 días. 
+ Se aconseja a las empresas que se realice  teletrabajo  y facilitar  flexibilidad horaria  para la conciliación familiar. 
+ Las  actividades quirúrgicas programadas  o las  pruebas diagnósticas  no preferentes podrán ser suspendidas o retrasadas. 
+ Los hospitales habilitarán las  camas de reserva  y se instalarán otras nuevas para asegurar una atención adecuada. 
+ El Gobierno regional establecerá un  plan específico de Urgencias y Unidades de Cuidados Intensivos. 
+ En  Atención Primaria  se atenderá prioritariamente a los pacientes en sus domicilios. 
+ Es conveniente  evitar  todos los  viajes  que no se consideren estrictamente imprescindibles. 
+ El Ejecutivo regional hace una especial  recomendación a los mayores  o con enfermedades crónicas para que eviten abandonar su hogar o residencia. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Coronavirus COVID-19   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Servicios e Información 
+ 
+ 
+ 
+     
+   Salud   
+ 
+   Educación   
+ 
+   Asuntos sociales   
+ 
+   Empleo   
+ 
+   Justicia   
+ 
+   Administración electrónica. Punto de acceso general   
+ 
+   Transporte   
+ 
+   Vivienda   
+ 
+   Urbanismo y medio ambiente   
+ 
+   Medio rural   
+ 
+   Consumo   
+ 
+   Atención al contribuyente   
+ 
+   Seguridad y emergencias   
+ 
+   Deportes   
+ 
+   Juventud   
+ 
+   Madrid en el mundo   
+ 
+   Asociaciones, fundaciones y colegios profesionales   
+ 
+   Municipios   
+ 
+   Información y atención al ciudadano   
+ 
+   Mapas   
+ 
+   PublicaMadrid   
+ 
+ 
+   
+ 
+ 
+ Cultura y Turismo 
+ 
+ 
+ 
+     
+   Oferta cultural y de ocio   
+ 
+   Actividades al aire libre y deporte   
+ 
+   Patrimonio cultural   
+ 
+   Compras   
+ 
+   Gastronomía   
+ 
+   Organiza tu visita   
+ 
+ 
+   
+ 
+ 
+ Inversión y Empresa 
+ 
+ 
+ 
+     
+   ¿Por qué Madrid?   
+ 
+   Inicia y desarrolla tu empresa   
+ 
+   Innova   
+ 
+   Relación con inversores   
+ 
+   Sectores destacados   
+ 
+ 
+   
+ 
+ 
+ Acción de Gobierno 
+ 
+ 
+ 
+     
+   Transparencia   
+ 
+   Participación   
+ 
+   Actualidad   
+ 
+   Espacios profesionales   
+ 
+   La Institución   
+ 
+   Información jurídica y legislación   
+ 
+   Estadísticas   
+ 
+   Datos abiertos   
+ 
+   Prensa   
+ 
+ 
+   
+ 
+ 
+ 
+ 012 
+ BOCM 
+ Contacta 
+ Sugerencias y quejas 
+ Redes sociales 
+ Centros 
+ Actividades 
+ RSS 
+ Navegación 
+ Aviso Legal 
+ Mapa web 
+ Accesibilidad 
+ WAI-AA 
+   
+ 
+ 
+ 
+ Todos los portales de la Comunidad de Madrid 
+   
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 

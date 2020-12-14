@@ -1,0 +1,77 @@
+Salud | Tecnalia Ámbitos Oferta Tecnologías Talento Actualidad Tecnalia es es eu en fr Ámbito Salud Nos preocupamos por el desarrollo de entornos saludables que preserven y mejoren la salud y la calidad de vida de las personas. Por ello orientamos nuestra actividad tecnológica a la transformación de los sistemas de salud y de cuidados de largo plazo, la alimentación, el transporte, la vivienda, la ciudad y el lugar de trabajo. 
+ Nuestros objetivos son: 
+ 
+ La personalización de la salud con diagnósticos y tratamientos de intervención y rehabilitación más precisos. 
+ La prevención de enfermedades crónicas y de alta incidencia a través de un consumo alimentario saludable. 
+ La evolución del sistema sanitario hacia la autogestión de la salud y el hogar como complemento al hospital. 
+ La mejora de la seguridad, confort y accesibilidad de espacios urbanos y laborales. 
+ 
+ Nuestra oferta: 
+ INGREDIENTES ALIMENTARIOS Y COMPUESTO FUNCIONALES Maximizamos los efectos positivos de los distintos ingredientes alimentarios a través de su protección, estabilización y liberación controlada. Apoyamos igualmente el desarrollo en nuestros clientes de nuevas carteras de ingredientes naturales, tecnológicos y funcionales, para la prevención de enfermedades de alta incidencia en la población. Trabajamos en: 
+ 
+ Obtención de ingredientes naturales, tecnológicos (antioxidantes, antimicrobianos, colorantes) y funcionales (esteroles, probióticos, simbióticos, prebióticos, vitaminas, …), con efecto en la prevención de enfermedades de alta incidencia: diabetes, cáncer, cardiovasculares, etc. 
+ Desarrollo de sistemas para su protección, estabilización y liberación controlada (análisis de la solubilidad y estabilidad frente a pH, temperatura, luz, etc., mediante técnicas de micro y nano-encapsulación o recubrimientos comestibles y análisis microbiológico, físico y químico de los ingredientes). 
+ Realización de estudios in vitro de toxicidad, biodisponibilidad y cinéticas de liberación. 
+ 
+ ALIMENTOS SALUDABLES Desarrollamos alimentos de alto valor nutricional y nuevas carteras de alimentos “health claim” y complementos alimenticios para nuestros clientes, a la par que aumentamos su productividad bajo el paradigma 4.0, garantizamos el control de la calidad de alimentos en procesos complejos, detectamos el fraude alimentario y valorizamos subproductos como nuevas fuentes de ingresos. Trabajamos en: 
+ 
+ Desarrollo de alimentos funcionales (con esteroles, probióticos, simbióticos, prebióticos, vitaminas, …) y complementos alimenticios especialmente orientados a la prevención de enfermedades crónicas de alta incidencia. 
+ Incremento del valor nutricional de alimentos y desarrollo de alimentos más saludables:  mejora de la biodisponibilidad de nutrientes, reformulación de alimentos para incrementar su valor nutricional (alimentos ricos en fibras, enriquecidos en proteínas, …) o reducir la presencia de compuestos no deseados (grasas saturadas, sal, azúcar). 
+ Mejora de las propiedades y calidad de los alimentos: conservación y mejora de las propiedades organolépticas, incremento de la vida útil de los alimentos, nuevas texturas y formatos adaptados a los distintos grupos poblacionales. 
+ 
+ DESARROLLO FARMACÉUTICO Simplificamos la gestión de proyectos farmacéuticos, fabricamos lotes de medicamentos a medida de las necesidades de nuestros clientes en cada fase, automatizamos sus procesos de fabricación, garantizamos la trazabilidad del medicamento y luchamos contra su falsificación o alteración, así como apoyamos el desarrollo de negocios complementarios basados en nutracéuticos. Igualmente innovamos en la administración de medicamentos avanzando hacia una medicina personalizada de mayor efectividad y menores efectos adversos. Trabajamos en: 
+ 
+ Gestión integral de proyectos de desarrollo farmacéutico para medicamentos innovadores, genéricos y OTC de uso humano, complementos alimenticios, nutracéuticos, cosméticos, biocidas y productos de higiene personal. 
+ Formulación galénica, puesta a punto y validación de técnicas analíticas, estudios de estabilidad, perfiles de disolución in vitro, escalado industrial, control de calidad y fabricación de lotes piloto, bio-lotes y lotes de registro, fabricación a terceros de lotes industriales, ensayos clínicos: bioequivalencias, estudios farmacocinéticos, ensayos nutricionales, validación clínica. Evaluación de la eficacia de productos de protección personal frente a artrópodos hematófagos. 
+ 
+ PRODUCTO BIOMÉDICO Funcionalizamos, caracterizamos y sensorizamos productos biomédicos minimizando los riesgos potenciales en pacientes. Además, realizamos los ensayos precisos para evaluar su seguridad y funcionalidad, evaluaciones necesarias para la obtención del marcado CE.  Trabajamos en: 
+ 
+ Síntesis (descelularización de tejidos nativos y modificación de polímeros sintéticos), procesado (electro-hilado, liofilización, bio-impresión, fabricación aditiva), modificación (bio)superficial aportando propiedades sensóricas o integradoras o antitrombóticas o antimicrobianas, caracterización biológica y fisicoquímica y sensorización para monitorización de biomarcadores. 
+ Desarrollo de sistemas híbridos: biomateriales y dispositivos electrónicos. 
+ Evaluación biológica de materiales in vitro e in vivo (seguridad ISO 10993 y funcionalidad). 
+ 
+ MEDICINA REGENERATIVA Aumentamos la efectividad de las terapias de regeneración y reconstrucción tisular gracias a novedosos sistemas de soporte. Desarrollamos biotintas funcionales y bioadhesivos para su adaptación en técnicas de impresión 3D y bioimpresión capaces de reducir los costes de fabricación. Trabajamos en: 
+ 
+ Materiales para regeneración y reconstrucción de tejidos. 
+ Sistemas innovadores de soporte y vehiculización de la terapia basado en biomateriales (naturales mediante descelularización de tejidos nativos y sintéticos) y apósitos inteligentes funcionales. 
+ 
+ DIAGNÓSTICO IN VITRO  Mejoramos las plataformas de detección y diagnóstico in vitro para ofrecer productos con mayor precisión y fiabilidad y facilitamos su escalado industrial. Nos preocupa lograr la extensión del diagnóstico al Point-of-care y su consecuente portabilidad y mínimo coste. Además, prestamos servicios de análisis y diagnóstico genético apoyando programas de cribado poblacional y genética reproductiva. Trabajamos en: 
+ 
+ Inmunoensayos ópticos y electroquímicos, ensayos enzimáticos e inmovilización orientada de biomoléculas en superficie. 
+ Electroestimulación de cultivos celulares, integración de electrodos en superficie, bio-tintas y microfluídica impresa y biomateriales para consumibles de diagnóstico (placas multipocillo, Lab On a Chip). 
+ Análisis y diagnóstico genético: Diseño y desarrollo de test genéticos en síndromes hereditarios (oncológico y no oncológicos), enfermedad oncológica no hereditaria y genética reproductiva. 
+ Identificación humana y genética forense. Screening de biomarcadores asociados al pronóstico y predicción de respuesta a tratamientos. 
+ Desarrollo de sistemas de análisis e identificación de la microbiota presente en diferentes matrices, biológicas y no biológicas. 
+ 
+ DIAGNÓSTICO POR IMAGEN Incorporamos inteligencia analítica a los equipos de instrumentación médica, permitiéndoles así facilitar la decisión del profesional clínico, mejorando la precisión de su diagnóstico y ahorrando tiempos y costes provenientes de pruebas complementarias a la imagen. Igualmente, desarrollamos tecnología para la automatización en laboratorios de técnicas de procesamiento y su consecuente aumento de capacidad productiva. 
+ Trabajamos en: Sistemas de apoyo al diagnóstico por imagen (histopatología, oncología, dermatología, neuroimagen) basados en técnicas de búsqueda de similitud visual e introducción de inteligencia analítica para fabricantes de instrumentación médica, procesamiento de imagen médica, automatización de técnicas de procesamiento en laboratorios, biopsia óptica, tratamiento de datos con tecnología fotónica y generación de biomarcadores visuales. 
+ SALUD DIGITAL Desarrollamos soluciones que modernizan los servicios público-privados de salud, que permiten el acceso y compartición del conocimiento, que garantizan la fiabilidad e inviolabilidad de los registros de salud, que apoyan y facilitan la toma de decisiones clínicas, que fomentan la adherencia al tratamiento del paciente y que permiten el entrenamiento de los profesionales de la salud en condiciones reales. 
+ Trabajamos en: Transformación digital de los procesos ligados al profesional clínico, al paciente y al propio sistema sanitario, análisis avanzado del metadato clínico, interoperabilidad de datos médicos entre países, dispositivos y aplicaciones para una salud personalizada, gamificación, entrenamiento virtual de profesionales, telemedicina, asistentes virtuales ( PLN-Speech ), inteligencia artificial y sistemas de apoyo a la decisión clínica. 
+ NEUROINGENIERÍA  Abordamos el desarrollo de nuevos dispositivos médicos capaces de ofrecer terapias rehabilitadoras vanguardistas, personalizadas y coste-efectivas ligadas al sistema nervioso, cardiovascular y respiratorio, facilitando la capacidad de atención a un mayor número de pacientes y generando un salto cualitativo en los resultados de la rehabilitación. Además, colaboramos activamente con profesionales clínicos y empresas para acelerar la llegada al mercado de nuevos y disruptivos dispositivos de neuromodulación. Trabajamos en: 
+ 
+ Dispositivos médicos no invasivos e implantables (robots, exoesqueletos, electroestimulación, estimulación magnética, modelado bio-electromagnético, neuro-modulación, neuro-prótesis, interfaces cerebro-máquina y neuronales, medicina bioelectrónica, electrocéutica) para diagnosticar, pronosticar, restaurar, rehabilitar o aumentar funciones sensoriales, motoras y cognitivas y mejorar el coste-efectividad de terapias rehabilitadoras de daño neurológico a nivel central y periférico: ictus, ELA, EM, migraña, dolor crónico, estreñimiento, higiene del sueño y demencia, enfermedades respiratorias y cardiacas. 
+ Traslación de prototipos de productos sanitarios a la práctica clínica, dispositivos seguros (hardware y software) diseñados para certificación, diseño y coordinación de ensayos clínicos fase I, II y III para dispositivos de clase II y III, sistemas de apoyo a la decisión clínica, autocalibración de dispositivos y personalización de terapia, gamificación y juegos serios inmersivos, telerrehabilitación y conexión con otros productos y sistemas hospitalarios, neurofisiología del comportamiento del paciente ante terapias y productos. 
+ 
+ ROBÓTICA MÉDICA  Desarrollamos plataformas y dispositivos robóticos que maximizan su usabilidad y aceptación por parte de los profesionales clínicos, que son versátiles sobre distintas operaciones quirúrgicas, y que ofrecen una mayor precisión y reducción del tiempo de cirugía y de posibles daños en tejidos y órganos, permitiendo recuperaciones postoperatorias más rápidas. Igualmente, abordamos soluciones para el entrenamiento en condiciones reales, previo a operaciones por parte de los profesionales de la salud. Trabajamos en: 
+ 
+ Dispositivos robóticos para asistir a profesionales clínicos en procesos quirúrgicos. 
+ Desarrollo de plataformas robóticas y software de control, interfaces avanzados, interacción persona-robot, sistemas de teleoperación y feedback sensorial-perceptivo. 
+ Asistencia quirúrgica y entrenamiento con realidad virtual, aumentada y mixta, asistentes virtuales ( PLN-Speech ) e incorporación de inteligencia artificial. 
+ Dispositivos seguros (hardware y software) e interoperables diseñados para certificación. 
+ 
+ DISPOSITIVOS WEARABLES PRL  Innovamos en dispositivos wearables y sistemas de entrenamiento inmersivos que ayuden a garantizar la seguridad en el trabajo, disminuir lesiones y bajas laborales, a la par de aumentar la productividad. Trabajamos en: 
+ 
+ Introducción de nuevos dispositivos  wearables , equipos y sistemas para la prevención de traumas musculoesqueléticos y otros riesgos laborales de las personas trabajadoras, y para la predicción de potenciales riesgos y mejoras en el puesto de trabajo. 
+ Entrenamiento en entornos inmersivos simulados, sistemas de alerta temprana, sistemas de captura de movimiento, ergonomía digital HF & UX ( Human Factors & User Experience ), analítica de datos, usabilidad de exoesqueletos, exoesqueletos inteligentes adaptados a cada persona y a cada aplicación, evaluación y mejora de tejidos y materiales plásticos repelentes para protección personal. 
+ 
+ SOLUCIONES URBANAS SALUDABLES Ayudamos a garantizar entornos seguros y saludables abordando de un modo integral la salud y el confort en entornos urbanos: de la gestión de la calidad ambiental, cambio climático y alertas sanitarias, al diseño de elementos y espacios que mejoren el confort en edificios y ciudades y estén adaptados a las necesidades de una población que envejece. Trabajamos en: 
+ 
+ Desarrollo de un ecosistema urbano saludable, construyendo y garantizando entornos físicos (vivienda, hospital, ciudad, transporte) seguros, confortables, accesibles, resilientes y no dañinos para la salud humana. 
+ Herramientas para la gestión de alertas sanitarias, de la contaminación acústica, calidad del aire y gases de efecto invernadero, evaluación y mejora de la eficacia de biocidas, lucha contras nuevas plagas urbanas producidas por el cambio climático, algoritmos y modelos para la reducción de emisiones en procesos productivos, materiales y sistemas constructivos saludables y sostenibles,  smartización  de mobiliario, modelos de teleasistencia y atención sanitaria, etc. que faciliten y mejoren la vida de las personas. 
+ 
+ Contacta Catálogo de desarrollos tecnológicos para el ámbito de la neurorrehabilitación (inglés) Descarga pdf Catálogo. Innovamos para crear los ingredientes y alimentos del futuro Descarga pdf Catálogo de servicios para la industria farmacéutica Descarga pdf Tecnologías relacionadas Adaptación al cambio climático Automatización, robótica y control mecatrónico Biología molecular Biosíntesis y fermentación Calidad del aire y acústica Computer Vision and Visual Interaction Extracción y encapsulación Galénica Ingeniería de superficies Inteligencia Artificial y Big Data Polímeros, composites y bio-basados Ámbitos relacionados Transformación digital Fabricación avanzada Ecosistema urbano Enlaces rápidos: Inspiring stories Sobre nosotros Tecnalia Ventures Sala de prensa – SEDE CENTRAL Parque Científico y Tecnológico de Gipuzkoa. 
+Mikeletegi Pasealekua, 2. 
+ E-20009 Donostia-San Sebastián. (Gipuzkoa) Spain 
+ Ver todas las sedes – CONTACTO Tel.:  902 760 000 
+ Llamadas internacionales:  (+34) 94 643 08 50 
+ Escríbenos – SÍGUENOS Suscríbete a la newsletter © 2020 TECNALIA Todos los derechos reservados Política de privacidad Política de cookies Información Legal 

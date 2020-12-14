@@ -1,0 +1,459 @@
+Notas de prensa – Sespas 
+ 
+ 
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ [if IE]>
+<link rel='stylesheet' id='avada-IE-css'  href='https://sespas.es/wp-content/themes/Avada/assets/css/ie.min.css?ver=7.0.2' type='text/css' media='all' />
+<style id='avada-IE-inline-css' type='text/css'>
+.avada-select-parent .select-arrow{background-color:#ffffff}
+.select-arrow{background-color:#ffffff}
+</style>
+<![endif] 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  LayerSlider updates and docs at: https://layerslider.kreaturamedia.com  
+ 
+ 
+ 
+ @media screen and (max-width: 640px){body:not(.fusion-builder-ui-wireframe) .fusion-no-small-visibility{display:none !important;}body:not(.fusion-builder-ui-wireframe) .sm-text-align-center{text-align:center !important;}body:not(.fusion-builder-ui-wireframe) .sm-text-align-left{text-align:left !important;}body:not(.fusion-builder-ui-wireframe) .sm-text-align-right{text-align:right !important;}body:not(.fusion-builder-ui-wireframe) .fusion-absolute-position-small{position:absolute;top:auto;width:100%;}}@media screen and (min-width: 641px) and (max-width: 1024px){body:not(.fusion-builder-ui-wireframe) .fusion-no-medium-visibility{display:none !important;}body:not(.fusion-builder-ui-wireframe) .md-text-align-center{text-align:center !important;}body:not(.fusion-builder-ui-wireframe) .md-text-align-left{text-align:left !important;}body:not(.fusion-builder-ui-wireframe) .md-text-align-right{text-align:right !important;}body:not(.fusion-builder-ui-wireframe) .fusion-absolute-position-medium{position:absolute;top:auto;width:100%;}}@media screen and (min-width: 1025px){body:not(.fusion-builder-ui-wireframe) .fusion-no-large-visibility{display:none !important;}body:not(.fusion-builder-ui-wireframe) .lg-text-align-center{text-align:center !important;}body:not(.fusion-builder-ui-wireframe) .lg-text-align-left{text-align:left !important;}body:not(.fusion-builder-ui-wireframe) .lg-text-align-right{text-align:right !important;}body:not(.fusion-builder-ui-wireframe) .fusion-absolute-position-large{position:absolute;top:auto;width:100%;}}   
+ 
+ Saltar al contenido 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  standard logo  
+ 
+  mobile logo  
+ 
+  sticky header logo  
+ 
+ 
+   
+ 
+ Sobre nosotros   Quiénes somos Sede social Estatutos Sociedades SESPAS Junta directiva y asamblea general Afiliación y prestaciones Transparencia y buen gobierno Posicionamientos Informes Gaceta Sanitaria Revistas de las sociedades Áreas de trabajo   Ética en Salud Pública Formación en Salud Pública Salud Pública Municipal Vacunas Prevención de adicciones Iatrogenia Atención al paciente crónico y de edad avanzada Actividades Congresos SESPAS   XVIII Congreso SESPAS 2019 Presencia Internacional Noticias   
+ 
+ 
+ Buscar: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ ¡CONTACTA CON NOSOTROS! 
+ Teléfono: 93 755 23 82
+ secretaria@sespas.es 
+   
+ 
+ 
+ 
+ 
+	.side-header-styling-wrapper > div {
+		display: none !important;
+	}
+
+	.side-header-styling-wrapper .side-header-background-image,
+	.side-header-styling-wrapper .side-header-background-color,
+	.side-header-styling-wrapper .side-header-border {
+		display: block !important;
+	}
+	 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Notas de prensa 
+ 
+ Inicio / Entradas / Notas de prensa   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Resumimos lo que se conoce acerca del uso de mascarillas de fabricación doméstica durante la crisis de la COVID-19 
+ 
+ En el contexto actual de la pandemia de la COVID-19 en el que hay una transmisión comunitaria importante, los Centers for Disease and Control (CDC) de los Estados Unidos de Américas y la Organización Mundial de la Salud han comenzado a recomendar el uso de mascarillas de fabricación doméstica para la población general cuando no [...]   
+ 
+ 
+ 
+ Jonay 2020-04-09T16:27:14+00:00 abril 8th, 2020 | COVID-19 ,  Notas de prensa ,  Noticias | Sin comentarios 
+ 
+ 
+ 
+ 
+ Reconocimiento y elogio de SESPAS al trabajo de todos los profesionales implicados en la gestión de la epidemia 
+ 
+ En línea con los reconocimientos públicos que la población está mostrando a todos los profesionales de la salud y como no puede ser de otra manera, SESPAS se une al mismo y destaca dentro de dicho colectivo al conjunto de profesionales que dentro de las diferentes estructuras de Salud Pública del Estado, de las Comunidades Autónomas [...]   
+ 
+ 
+ 
+ Jonay 2020-04-09T12:20:28+00:00 marzo 17th, 2020 | COVID-19 ,  Notas de prensa ,  Noticias | Sin comentarios 
+ 
+ 
+ 
+ 
+ La WFPHA escribe al presidente de la Junta de Andalucía resaltando la importancia de la Escuela Andaluza de Salud Pública 
+ 
+ Hace unas semanas se hizo pública una iniciativa legislativa presentada por el Grupo Popular en el Parlamento de Andalucía en la que se recogía textualmente la “extinción y disolución” de la Escuela Andaluza de Salud Pública. SESPAS se dirigió entonces al presidente de la Junta de Andalucía, D. Juan Manuel Moreno, para solicitar preservar esta [...]   
+ 
+ 
+ 
+ Jonay 2020-04-09T12:23:15+00:00 febrero 4th, 2020 | Notas de prensa ,  Noticias | Sin comentarios 
+ 
+ 
+ 
+ 
+ SESPAS pide que se preserve la Escuela Andaluza de Salud Pública por su alto valor científico y social 
+ 
+ Ante la Proposición de Ley presentada por el Grupo Popular en el Parlamento de Andalucía en la que se recoge textualmente la “extinción y disolución” de la Escuela Andaluza de Salud Pública, SESPAS pide al presidente de la Junta de Andalucía, D. Juan Manuel Moreno, que preserve esta institución por su alto valor científico y [...]   
+ 
+ 
+ 
+ Jonay 2020-01-21T11:32:23+00:00 enero 21st, 2020 | Notas de prensa ,  Noticias | 1 comentario 
+ 
+ 
+ 
+ 
+ SESPAS lamenta la no aplicación de la tasa a las bebidas azucaradas para 2020 en la Comunidad Valenciana 
+ 
+ Fuentes periodísticas señalan que la falta de apoyo del Partit Socialista del País Valencià, alineado en este punto con las posiciones de la patronal de la alimentación, ha llevado a Unides Podem i Compromís a retirar la propuesta de instaurar la “tasa del azúcar” durante la comisión de Economía, Presupuestos y Hacienda celebrada en Les [...]   
+ 
+ 
+ 
+ Jonay 2019-12-14T17:32:01+00:00 diciembre 13th, 2019 | Notas de prensa ,  Noticias | Sin comentarios 
+ 
+ 
+ 
+ 
+ SESPAS pide mantener el impuesto sobre bebidas azucaradas en Cataluña y plantea su extensión a todas las comunidades autónomas 
+ 
+ Como ya señalábamos el viernes pasado, una reciente sentencia del Tribunal Superior de Justicia (TSJ) de Cataluña ha anulado por cuestiones estrictamente formales el reglamento que desarrollaba la Ley catalana 5/2017, de 28 de marzo, que, entre otros muchos aspectos y como medida de salud pública para luchar contra la obesidad, creaba un impuesto sobre [...]   
+ 
+ 
+ 
+ Jonay 2019-07-15T12:18:33+00:00 julio 15th, 2019 | Notas de prensa ,  Noticias | 1 comentario 
+ 
+ 
+ 
+ 
+ La WFPHA y la EUPHA escriben al Alcalde de Madrid pidiéndole que mantenga “Madrid Central” y que adopte nuevas medidas de protección de la salud frente a la contaminación 
+ 
+ En el día de hoy la Federación Mundial de Asociaciones de Salud Pública (WFPHA) y la Asociación Europea de Salud Pública (EUPHA), ambas organizaciones transnacionales de salud pública de las que es miembro activo SESPAS y que representan a miles de profesionales e investigadores de salud de todo el mundo han escrito sendas cartas al Señor [...]   
+ 
+ 
+ 
+ Jonay 2019-07-11T17:13:56+00:00 julio 11th, 2019 | Notas de prensa ,  Noticias | Sin comentarios 
+ 
+ 
+ 
+ 
+ Valoración de SESPAS de la nueva Ley Orgánica de Protección de Datos Personales en lo relativo al tratamiento de datos de salud 
+ 
+ Hace ahora un año SESPAS hizo pública su propuesta normativa para la adaptación al ámbito de la salud del nuevo Reglamento General Europeo de Protección de Datos (RGPD) a través de un informe monográfico sobre protección de datos personales y secreto profesional en el ámbito de la salud. Posteriormente, el 25 de mayo el RGPD fue plenamente aplicable mientras [...]   
+ 
+ 
+ 
+ Jonay 2019-02-13T18:38:52+00:00 febrero 13th, 2019 | Notas de prensa ,  Noticias | Sin comentarios 
+ 
+ 
+ 
+ 
+ Varias sociedades científicas se unen a la SEE para pedir al Gobierno medidas fiscales y sobre los precios para hacer más saludables los alimentos 
+ 
+ Recientemente la Sociedad Española de Epidemiología emitió una nota de prensa en la que se denunciaba la ausencia de avances significativos tras la ratificación del acuerdo entre el Ministerio de Sanidad y la industria alimentaria. Tras la firma de este acuerdo para reducir un 10% el contenido de azúcar, sal y grasas, los epidemiólogos recordaban que [...]   
+ 
+ 
+ 
+ Jonay 2019-02-11T17:54:55+00:00 febrero 7th, 2019 | Notas de prensa ,  Noticias | Sin comentarios 
+ 
+ 
+ 
+ 
+ Nota de prensa sobre la presentación del Informe SESPAS 2018: Salud comunitaria y administración local 
+ 
+ SESPAS publica cada dos años un informe sobre la situación de la salud en España. Cada informe pone el foco en un aspecto de interés y actualidad como hilo conductor. El de 2018 es el decimotercer informe bienal que publica SESPAS, se centra en 'la salud comunitaria y la administración local’, y ha sido editado por [...]   
+ 
+ 
+ 
+ Jonay 2019-01-13T19:08:47+00:00 diciembre 17th, 2018 | Notas de prensa ,  Noticias | Sin comentarios 
+ 
+ 
+ 
+ 1 2 Siguiente 
+ 
+ 
+ spankbang 
+ xxnx 
+ porncuze 
+ porn 
+ porn600 
+ tube300 
+ tube100 
+ watchfreepornsex 
+ 
+ .hm{display:table-column; text-align:center;} 
+    fusion-row  
+    #main  
+ 
+ 
+ 
+ 
+ 
+   SESPAS 
+ Sociedad Española de Salud Pública y Administración Sanitaria  
+ C/ Bonaire, 7, 1er piso.
+08301 Mataró (Barcelona) 
+ Tel. 93 755 23 82  
+   
+ 
+ TODAS LAS NOVEDADES Boletín SESPAS 
+ Congresos y jornadas 
+ Comunicados 
+ Informe SESPAS 
+ Notas de prensa 
+ Noticias 
+ Posicionamiento 
+ Transparencia y buen gobierno 
+   
+ 
+ SOCIEDADES SESPAS   Sociedad Española de Epidemiología, (SEE), Asociación Española de Economía de la Salud (AES), Asociación Juristas de la Salud (AJS) (AJS), Sociedad Española de Sanidad Ambiental (SESA), Red Española de Atención Primaria, (REAP), Sociedad Española de Epidemiología Psiquiátrica, Asociación de Enfermería Comunitaria (AEC), Societat de Salut Pública de Catalunya i Balears (SSPCiB), Sociedad Andaluza de Salud Pública y Administración Sanitaria (SASPAS-HIPATIA), Sociedad Canaria de Salud Pública (SCSP), Asociación Madrileña de Administración Sanitaria, (AMAS), Asociación Madrileña de Salud Pública (AMaSaP) 
+ ¡Síguenos! 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+    fusion-columns  
+    fusion-row  
+    fusion-footer-widget-area  
+ 
+ 
+ 
+ 
+ 
+		Copyright 2017. Sespas  | Aviso legal	 
+ 
+ 
+ 
+    fusion-fusion-copyright-content  
+    fusion-row  
+    #footer  
+    fusion-footer  
+ 
+ 
+    wrapper  
+    #boxed-wrapper  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ Ir a Arriba 
+ 
+ 
+ 
