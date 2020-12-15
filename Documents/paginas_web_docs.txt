@@ -17,17 +17,17 @@ deportes16: https://www.lavanguardia.com/local/sevilla/20201214/6120453/andaluci
 deportes17: https://elpais.com/deportes/2020-12-12/el-dictado-de-kroos.html
 deportes18: https://www.cope.es/emisoras/aragon/huesca-provincia/huesca/informativo-mediodia-en-huesca/amp/noticias/seguridad-montana-deportes-aventura-20201214_1043767
 deportes19: https://www.elsaltodiario.com/deportes/cp-miralvalle-un-colegio-con-mucha-clase
-deportes20: 
-deportes21:
-deportes22:
-deportes23:
-deportes24:
-deportes25:
-deportes26:
-deportes27:
-deportes28:
-deportes29:
-deportes30:
+deportes20: https://www.abc.es/deportes/futbol/abci-futbol-deporte-nunca-descansa-202012150129_noticia.html
+deportes21: https://as.com/masdeporte/2020/12/02/polideportivo/1606905753_894084.html
+deportes22: https://www.radiohuesca.com/deportes/no-hay-quien-pare-a-bada-huesca-13122020-147864.html
+deportes23: https://www.20minutos.es/deportes/noticia/4485108/0/deporte-espanol-se-escribe-en-femenino/
+deportes24: https://www.abc.es/espana/catalunya/politica/abci-detenido-secretario-deportes-generalitat-trama-desvio-fondos-202011252103_noticia.html
+deportes25: https://www.elmundo.es/deportes/2020/11/17/5fb416e1fdddff6d988b46b9.html
+deportes26: https://www.lavanguardia.com/local/la-rioja/20201118/49537135247/logrono-deporte-aportara-250000-euros-para-apoyar-a-los-equipos-de-futbol-referentes.html
+deportes27: https://www.estadiodeportivo.com/polideportivo/2020/11/03/deportes-antiguos-historia/303412.html
+deportes28: https://www.rtve.es/deportes/20200908/fracaso-negociacion-protocolo-comun-deporte-no_profesional-coronavirus-csd/2041715.shtml
+deportes29: https://www.lavanguardia.com/deportes/20201102/49169445519/gerard-esteva-ufec-covid-19.html
+deportes30: https://www.lavozdeasturias.es/noticia/deportes/2020/12/15/solo-segunda-ola-pudo-derrotar-promesa-natacion-navia/00031608030879900324706.htm
 
 politica1: https://www.abc.es/economia/abci-politica-deficit-cero-y-ayudas-millonarias-autonomos-financia-alemania-cierre-202012140916_noticia_amp.html
 politica2: https://www.abc.es/economia/abci-politica-deficit-cero-y-ayudas-millonarias-autonomos-financia-alemania-cierre-202012140916_noticia_amp.html
@@ -60,13 +60,13 @@ politica28: https://cnnespanol.cnn.com/2020/12/11/opinion-trump-es-la-expresion-
 politica29: https://www.antena3.com/programas/espejo-publico/noticias/albert-rivera-presenta-libro-ciudadano-libre-menos-mal-que-dimiti_202012145fd7145e59ccfa00017eb02c.html
 politica30: https://www.diariodeleon.es/articulo/provincia/santa-maria-paramo-aprueba-presupuesto-reclama-altura-politica/202012141847232069813.html
 
-salud1:
-salud2:
-salud3:
-salud4:
-salud5:
-salud6:
-salud7:
+salud1: https://www.lavanguardia.com/vida/salud/enfermedades/20190621/463017004582/ela-esclerosis-lou-gehrig-discapacidad-stephen-hawking-dia-mundial-de-la-ela.html
+salud2: https://gacetamedica.com/politica/calendarios-vacunales-asi-son-los-de-portugal-italia-reino-unido-y-espana/
+salud3: https://gacetamedica.com/politica/cataluna-registra-el-mayor-aumento-de-plazas-de-fse-respecto-a-la-ultima-convocatoria/
+salud4: https://gacetamedica.com/politica/objetivos-cumplidos-en-car-t-dos-anos-despues-de-su-integracion-en-espana/
+salud5: https://gacetamedica.com/politica/la-covid-19-persistente-ya-tiene-un-codigo-en-la-clasificacion-internacional-de-enfermedades-de-la-oms/
+salud6: https://news.un.org/es/story/2020/01/1468221
+salud7: https://gacetamedica.com/investigacion/regulacion-eecc-y-precio-y-reembolso-retos-para-mejorar-el-acceso-a-oncologia-de-precision-en-europa/
 salud8:
 salud9:
 salud10:
