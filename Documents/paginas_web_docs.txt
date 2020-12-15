@@ -17,48 +17,48 @@ deportes16: https://www.lavanguardia.com/local/sevilla/20201214/6120453/andaluci
 deportes17: https://elpais.com/deportes/2020-12-12/el-dictado-de-kroos.html
 deportes18: https://www.cope.es/emisoras/aragon/huesca-provincia/huesca/informativo-mediodia-en-huesca/amp/noticias/seguridad-montana-deportes-aventura-20201214_1043767
 deportes19: https://www.elsaltodiario.com/deportes/cp-miralvalle-un-colegio-con-mucha-clase
-deportes20: https://www.abc.es/deportes/futbol/abci-futbol-deporte-nunca-descansa-202012150129_noticia.html
-deportes21: https://as.com/masdeporte/2020/12/02/polideportivo/1606905753_894084.html
-deportes22: https://www.radiohuesca.com/deportes/no-hay-quien-pare-a-bada-huesca-13122020-147864.html
-deportes23: https://www.20minutos.es/deportes/noticia/4485108/0/deporte-espanol-se-escribe-en-femenino/
-deportes24: https://www.abc.es/espana/catalunya/politica/abci-detenido-secretario-deportes-generalitat-trama-desvio-fondos-202011252103_noticia.html
-deportes25: https://www.elmundo.es/deportes/2020/11/17/5fb416e1fdddff6d988b46b9.html
-deportes26: https://www.lavanguardia.com/local/la-rioja/20201118/49537135247/logrono-deporte-aportara-250000-euros-para-apoyar-a-los-equipos-de-futbol-referentes.html
-deportes27: https://www.estadiodeportivo.com/polideportivo/2020/11/03/deportes-antiguos-historia/303412.html
-deportes28: https://www.rtve.es/deportes/20200908/fracaso-negociacion-protocolo-comun-deporte-no_profesional-coronavirus-csd/2041715.shtml
-deportes29: https://www.lavanguardia.com/deportes/20201102/49169445519/gerard-esteva-ufec-covid-19.html
-deportes30: https://www.lavozdeasturias.es/noticia/deportes/2020/12/15/solo-segunda-ola-pudo-derrotar-promesa-natacion-navia/00031608030879900324706.htm
+deportes20: 
+deportes21:
+deportes22:
+deportes23:
+deportes24:
+deportes25:
+deportes26:
+deportes27:
+deportes28:
+deportes29:
+deportes30:
 
-politica1: 
-politica2:
-politica3:
-politica4:
-politica5:
-politica6:
-politica7:
-politica8:
-politica9:
-politica10:
-politica11:
-politica12:
-politica13:
-politica14:
-politica15:
-politica16:
-politica17:
-politica18:
-politica19:
-politica20:
-politica21:
-politica22:
-politica23:
-politica24:
-politica25:
-politica26:
-politica27:
-politica28:
-politica29:
-politica30:
+politica1: https://www.abc.es/economia/abci-politica-deficit-cero-y-ayudas-millonarias-autonomos-financia-alemania-cierre-202012140916_noticia_amp.html
+politica2: https://www.abc.es/economia/abci-politica-deficit-cero-y-ayudas-millonarias-autonomos-financia-alemania-cierre-202012140916_noticia_amp.html
+politica3: https://www.lavanguardia.com/politica/20201214/6118225/cuatro-dias-errejon.html
+politica4: https://amp.laopiniondemalaga.es/opinion/2020/12/14/guerra-politica-carta/1211111.html
+politica5: https://www.excelsior.com.mx/opinion/ricardo-pascoe-pierce/el-negacionismo-en-politica/1422108
+politica6: https://www.elespanol.com/invertia/disruptores-innovadores/opinion/20201214/politica-digital-no-blanca-negra-gris/542825720_13.html
+politica7: https://www.20minutos.es/noticia/4509727/0/rodrigo-rato-politica-estropea-demas-tambien/
+politica8: https://www.elperiodico.com/es/opinion/20201212/politica-caligula-11381907
+politica9: https://www.naiz.eus/eu/info/noticia/20201213/otorgar-autoridad-para-anular-el-debate-sobre-politica-economica
+politica10: https://www.europapress.es/nacional/noticia-gonzalez-laya-cree-ue-mantendra-reconocimiento-politico-guaido-no-aclara-titulo-20201214110358.html
+politica11: https://theworldnews.net/es-news/los-sondeos-de-la-junta-revelan-que-todos-los-caminos-para-la-derecha-en-andalucia-pasan-por-vox
+politica12: https://okdiario.com/espana/otro-socio-sanchez-acusa-tribunal-supremo-persecucion-politica-investigar-corrupcion-del-pnv-6575772
+politica13: https://www.eldiario.es/navarra/pnv-denuncia-persecucion-politica-causa-abierta-supremo-consejero-navarro-manuel-ayerdi-caso-davalor_1_6505352.html
+politica14: https://www.revistalugardeencuentro.com/wp/2020/12/15/del-cid-torremolinos-se-ha-convertido-en-reflejo-de-la-peor-politica-la-que-se-olvida-de-la-gente/
+politica15: https://www.lavanguardia.com/local/castilla-la-mancha/20201215/6123426/c-lm-destaca-papel-politica-cohesion-garantizar-igualdad-diferentes-regiones-europa.html
+politica16: https://www.larazon.es/comunidad-valenciana/20201215/mktvbsfazvfvlaeitikh22uh6e.html
+politica17: https://www.elcomercio.es/economia/estatuto-electrointensivo-principado-rechaza-20201215171412-nt.html
+politica18: https://arainfo.org/federalismo-participacion-politica-convivencia-y-municipalismo-algunas-lecturas-y-reflexiones/
+politica19: https://vertele.eldiario.es/noticias/Telemadrid-voluntad-politica-Gobierno-Isabel-Diaz-Ayuso-solucionar-problemas-dialogo_0_2295970429.html
+politica20: https://www.dw.com/es/inmigraci%C3%B3n-en-la-ue-el-2020-termina-sin-avances-en-pol%C3%ADtica-de-asilo/a-55941241
+politica21: https://arainfo.org/luisa-broto-denuncia-que-la-politica-cultural-de-zaragoza-esta-en-manos-de-vox/
+politica22: https://www.larazon.es/espana/20201215/njw2f4rqq5cznb64iqum4qq2y4.html
+politica23: https://www.elcorreo.com/politica/euskadi-iturgaiz-pp-ciudadanos-politica-20201215110206-nt.html
+politica24: https://okdiario.com/economia/indignacion-bruselas-deriva-politica-economica-pedro-sanchez-6564077
+politica25: https://www.expansion.com/economia/politica/2020/12/15/5fd883c1468aeba2248b459e.html
+politica26: https://www.portafolio.co/opinion/editorial/nueva-politica-social-editorial-francisco-miranda-547523
+politica27: https://www.infobae.com/opinion/2020/12/13/una-dirigencia-politica-desubicada/
+politica28: https://cnnespanol.cnn.com/2020/12/11/opinion-trump-es-la-expresion-de-los-nuevos-tiempos-que-llegaron-para-quedarse-en-la-politica/
+politica29: https://www.antena3.com/programas/espejo-publico/noticias/albert-rivera-presenta-libro-ciudadano-libre-menos-mal-que-dimiti_202012145fd7145e59ccfa00017eb02c.html
+politica30: https://www.diariodeleon.es/articulo/provincia/santa-maria-paramo-aprueba-presupuesto-reclama-altura-politica/202012141847232069813.html
 
 salud1:
 salud2:
