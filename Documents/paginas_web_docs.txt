@@ -1,23 +1,23 @@
 deportes1: https://elpais.com/deportes/2020-12-13/el-jugador-de-rugby-de-42-anos-que-no-recuerda-haber-ganado-el-mundial.html
-deportes2:
-deportes3:
-deportes4:
-deportes5:
-deportes6:
-deportes7:
-deportes8:
-deportes9:
-deportes10:
-deportes11:
-deportes12:
-deportes13:
-deportes14:
-deportes15:
-deportes16:
-deportes17:
-deportes18:
-deportes19:
-deportes20:
+deportes2: https://www.elespanol.com/deportes/futbol/20201214/streaming-directo-sorteo-octavos-final-champions-league/543446000_0.html
+deportes3: https://www.elperiodico.com/es/videos/zeta-media-lab/gervasio-deferr-la-mina/11375319.shtml
+deportes4: https://www.elmundo.es/deportes/futbol/primera-division/2020/12/13/5fd68c3721efa013058b460a.html
+deportes5: https://elpais.com/deportes/2020-12-13/messi-sufre-por-el-barca.html
+deportes6: https://www.diariovasco.com/deportes/mas-deportes/deporte-federado-vuelve-20201214203907-nt.html
+deportes7: https://www.elcomercio.es/deportes/mas-deportes/deporte-asturiano-reclama-20201214015928-ntvo.html
+deportes8: https://www.diariocordoba.com/noticias/deportes/atalanta-maquina-futbol_1401862.html
+deportes9: https://www.marca.com/otros-deportes/2020/11/23/5fbba80dca474148258b45de.html
+deportes10: https://elpais.com/deportes/2020-12-14/alerta-en-el-psg-por-la-nueva-lesion-del-neymar.html?outputType=amp
+deportes11: https://www.elmundo.es/deportes/mas-deporte/2020/12/11/5fd3c9e2fdddff4d6d8b466b.html
+deportes12: https://elpais.com/deportes/2020-12-13/messi-el-taconazo-de-law-y-el-derbi-geoestrategico.html
+deportes13: https://elpais.com/deportes/2020-12-12/el-barca-se-descose.html
+deportes14: https://elpais.com/deportes/2020-12-13/la-pandemia-alumbra-un-atletismo-de-escaparate-y-records.html
+deportes15: https://www.eldiario.es/andalucia/blogs/euronautas/deporte-sevilla-buena-practica-recorrido_132_6497179.html
+deportes16: https://www.lavanguardia.com/local/sevilla/20201214/6120453/andalucia-recibe-bandera-distingue-region-europea-deporte-2021-ve-anhelo-realizado.html
+deportes17: https://elpais.com/deportes/2020-12-12/el-dictado-de-kroos.html
+deportes18: https://www.cope.es/emisoras/aragon/huesca-provincia/huesca/informativo-mediodia-en-huesca/amp/noticias/seguridad-montana-deportes-aventura-20201214_1043767
+deportes19: https://www.elsaltodiario.com/deportes/cp-miralvalle-un-colegio-con-mucha-clase
+deportes20: 
 deportes21:
 deportes22:
 deportes23:
