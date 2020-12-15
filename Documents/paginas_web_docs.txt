@@ -67,26 +67,26 @@ salud4: https://gacetamedica.com/politica/objetivos-cumplidos-en-car-t-dos-anos-
 salud5: https://gacetamedica.com/politica/la-covid-19-persistente-ya-tiene-un-codigo-en-la-clasificacion-internacional-de-enfermedades-de-la-oms/
 salud6: https://news.un.org/es/story/2020/01/1468221
 salud7: https://gacetamedica.com/investigacion/regulacion-eecc-y-precio-y-reembolso-retos-para-mejorar-el-acceso-a-oncologia-de-precision-en-europa/
-salud8:
-salud9:
-salud10:
-salud11:
-salud12:
-salud13:
-salud14:
-salud15:
-salud16:
-salud17:
-salud18:
-salud19:
-salud20:
-salud21:
-salud22:
-salud23:
-salud24:
-salud25:
-salud26:
-salud27:
-salud28:
-salud29:
-salud30:
+salud8: https://gacetamedica.com/investigacion/maria-casanova-acebes-mi-grupo-en-el-cnio-tratara-de-evitar-la-cronicidad-del-cancer/
+salud9: https://gacetamedica.com/investigacion/nuevos-datos-de-belantamab-mafodotina-para-el-tratamiento-del-mm-refractario/
+salud10: https://gacetamedica.com/investigacion/la-enfermedad-de-creutzfeldt-jakob-cuando-la-incidencia-se-equipara-a-la-prevalencia/
+salud11: https://gacetamedica.com/investigacion/oncologia/ash/ash-2020-consolida-el-beneficio-clinico-de-yescarta-en-lbcg-y-se-abre-paso-en-lnh/
+salud12: https://gacetamedica.com/investigacion/del-tratamiento-sistemico-al-topico-desafio-en-la-psoriasis-leve/
+salud13: https://www.informador.mx/Saturan-hospitales-en-Jalisco-por-COVID-19-l202012130001.html
+salud14: https://www.entrepreneur.com/article/361561
+salud15: https://marieclaire.perfil.com/noticias/belleza/lo-nuevo-en-proteccion-solar.phtml
+salud16: https://noticias.perfil.com/noticias/opinion/que-cuidados-tener-al-vacunar-contra-el-coronavirus-a-personas-alergicas.phtml
+salud17: https://www.consalud.es/pacientes/dias-mundiales/el-estigma-existente-sobre-salud-mental-hace-la-vida-mas-dificil-a-los-pacientes_69278_102.html
+salud18: https://elpais.com/sociedad/2019/07/17/actualidad/1563386518_647191.html
+salud19: https://sevilla.abc.es/andalucia/sevi-salud-amplia-andaluces-diabetes-sistema-flash-control-glucosa-201911131205_noticia.html
+salud20: https://elpais.com/sociedad/2019/11/01/actualidad/1572637894_956255.html
+salud21: https://news.un.org/es/story/2019/07/1459281
+salud22: https://www.lavanguardia.com/ciencia/20191114/471582229720/informe-lancet-cambio-climatico-amenaza-salud-ninos.html
+salud23: https://elpais.com/sociedad/2019/01/16/actualidad/1547667687_190434.html
+salud24: https://maldita.es/malditobulo/2019/11/14/diabetes-bulos-y-mitos-que-te-estan-intentado-colar-sobre-esta-enfermedad/
+salud25: https://www.infobae.com/salud/2019/06/13/cual-es-la-enfermedad-contra-la-que-sergio-gendler-lucho-con-hidalguia/
+salud26: https://www.lavanguardia.com/vida/salud/enfermedades/20190411/461586695549/parkinson-temblores-cuerpos-de-lewy-dopamina-neurodegenerativo-neuronas.html
+salud27: https://www.lavanguardia.com/vida/salud/enfermedades-infecciosas/20190425/461854698508/paludismo-malaria-mosquito-fiebre-alta-anofeles-tropical-subsahariana.html
+salud28: https://www.lavanguardia.com/vivo/lifestyle/20190921/47478613075/dia-mundial-alzheimer-como-prevenir-evitar.html
+salud29: https://www.lavanguardia.com/vida/salud/enfermedades-cardiovasculares/20190517/462290514298/hipertension-arterial-presion-arterial-sistolica-diastolica-corazon-sobreesfuerzo.html
+salud30: https://www.lavanguardia.com/vida/salud/enfermedades-geneticas/20190417/461706818788/hemofilia-sangre-hemorragia-coagulacion-cromosoma-x-heridas-factor-viii-factor-ix-sangrado.html
