@@ -1,6 +1,6 @@
 deportes1: https://elpais.com/deportes/2020-12-13/el-jugador-de-rugby-de-42-anos-que-no-recuerda-haber-ganado-el-mundial.html
 deportes2: https://www.elespanol.com/deportes/futbol/20201214/streaming-directo-sorteo-octavos-final-champions-league/543446000_0.html
-deportes3: https://www.elperiodico.com/es/videos/zeta-media-lab/gervasio-deferr-la-mina/11375319.shtml
+deportes3: https://www.elperiodico.com/es/deportes/20201211/gervasio-deferr-problema-mandan-han-11374467
 deportes4: https://www.elmundo.es/deportes/futbol/primera-division/2020/12/13/5fd68c3721efa013058b460a.html
 deportes5: https://elpais.com/deportes/2020-12-13/messi-sufre-por-el-barca.html
 deportes6: https://www.diariovasco.com/deportes/mas-deportes/deporte-federado-vuelve-20201214203907-nt.html
@@ -15,13 +15,13 @@ deportes14: https://elpais.com/deportes/2020-12-13/la-pandemia-alumbra-un-atleti
 deportes15: https://www.eldiario.es/andalucia/blogs/euronautas/deporte-sevilla-buena-practica-recorrido_132_6497179.html
 deportes16: https://www.lavanguardia.com/local/sevilla/20201214/6120453/andalucia-recibe-bandera-distingue-region-europea-deporte-2021-ve-anhelo-realizado.html
 deportes17: https://elpais.com/deportes/2020-12-12/el-dictado-de-kroos.html
-deportes18: https://www.cope.es/emisoras/aragon/huesca-provincia/huesca/informativo-mediodia-en-huesca/amp/noticias/seguridad-montana-deportes-aventura-20201214_1043767
+deportes18: https://www.abc.es/deportes/formula-1/abci-alonso-lidera-rookie-test-atracon-vueltas-202012151622_noticia.html
 deportes19: https://www.elsaltodiario.com/deportes/cp-miralvalle-un-colegio-con-mucha-clase
 deportes20: https://www.abc.es/deportes/futbol/abci-futbol-deporte-nunca-descansa-202012150129_noticia.html
 deportes21: https://as.com/masdeporte/2020/12/02/polideportivo/1606905753_894084.html
 deportes22: https://www.radiohuesca.com/deportes/no-hay-quien-pare-a-bada-huesca-13122020-147864.html
 deportes23: https://www.20minutos.es/deportes/noticia/4485108/0/deporte-espanol-se-escribe-en-femenino/
-deportes24: https://www.abc.es/espana/catalunya/politica/abci-detenido-secretario-deportes-generalitat-trama-desvio-fondos-202011252103_noticia.html
+deportes24: https://www.elespanol.com/deportes/baloncesto/20201215/copa-rey-baloncesto-jugara-palacio-deportes-madrid/543696083_0.html
 deportes25: https://www.elmundo.es/deportes/2020/11/17/5fb416e1fdddff6d988b46b9.html
 deportes26: https://www.lavanguardia.com/local/la-rioja/20201118/49537135247/logrono-deporte-aportara-250000-euros-para-apoyar-a-los-equipos-de-futbol-referentes.html
 deportes27: https://www.estadiodeportivo.com/polideportivo/2020/11/03/deportes-antiguos-historia/303412.html
@@ -30,7 +30,7 @@ deportes29: https://www.lavanguardia.com/deportes/20201102/49169445519/gerard-es
 deportes30: https://www.lavozdeasturias.es/noticia/deportes/2020/12/15/solo-segunda-ola-pudo-derrotar-promesa-natacion-navia/00031608030879900324706.htm
 
 politica1: https://www.abc.es/economia/abci-politica-deficit-cero-y-ayudas-millonarias-autonomos-financia-alemania-cierre-202012140916_noticia_amp.html
-politica2: https://www.abc.es/economia/abci-politica-deficit-cero-y-ayudas-millonarias-autonomos-financia-alemania-cierre-202012140916_noticia_amp.html
+politica2: https://www.eldiario.es/politica/otegi-dice-supremo-pretende-desestabilizar-escenario-politico_1_6506366.html
 politica3: https://www.lavanguardia.com/politica/20201214/6118225/cuatro-dias-errejon.html
 politica4: https://amp.laopiniondemalaga.es/opinion/2020/12/14/guerra-politica-carta/1211111.html
 politica5: https://www.excelsior.com.mx/opinion/ricardo-pascoe-pierce/el-negacionismo-en-politica/1422108
