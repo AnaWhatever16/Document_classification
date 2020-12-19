@@ -5,7 +5,7 @@ from nltk import SnowballStemmer
 import os
 import pandas as pd
 
-def pre_procesar_texto(texto: str, x: str, mode: str):
+def pre_procesar_texto(texto: str, mode: str):
     
     path = os.getcwd()
     stop_words = []
@@ -35,13 +35,7 @@ def pre_procesar_texto(texto: str, x: str, mode: str):
         pass
         #spanishstemmer=SnowballStemmer('spanish')
         #clean = [spanishstemmer.stem(token) for token in clean]
-    
+    return clean
     #Aquí es dónde escogemos las palabras referentes. Se analizarán dos métodos diferentes, la proporción de aparición de una palabra y la tf-idf.
-    if(x == 'frecuencia'):
-        word_freq = Counter(clean)
-        common_words = word_freq.most_common(25)
-        return common_words
 
-    if(x == 'tfidf'):
-        pass
         

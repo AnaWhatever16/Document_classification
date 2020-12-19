@@ -24,6 +24,7 @@ def main(directorio, n, modo):
     files = ""
     temas = ["Deportes", "Politica", "Salud"]
     path = ""
+    x = 'frecuencia'
     
     # En esta función lo que se realizará es obtener los nombres de los documentos presentes en las carpetas
     # llamadas 'Deporte', 'Politica', 'Salud'.
@@ -36,7 +37,15 @@ def main(directorio, n, modo):
            files = f.read()
            doc = doc + files
 
-       tokens = pre_procesar_texto(doc.lower(), 'frecuencia', get_modo(modo))
+       clean = pre_procesar_texto(doc.lower(), get_modo(modo))
+       if(x == 'frecuencia'):
+           word_freq = Counter(clean)
+           common_words = word_freq.most_common(25)
+       return common_words
+
+       if(x == 'tfidf'):
+           pass
+           
        f2 = open(directorio + "/Pre-Glosario/" + i + ".txt","w+") 
        f2.write(str(tokens))
        f2.close()
