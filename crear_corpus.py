@@ -1,29 +1,47 @@
 import spacy
-import re
+from collections import Counter
 import nltk
 from nltk import SnowballStemmer
+import os
+import pandas as pd
 
-def procesar_texto(texto: str, mode: str, x: str):
+def pre_procesar_texto(texto: str, x: str, mode: str):
+    
+    path = os.getcwd()
+    stop_words = []
+    
+    #Eliminación de los stopwords
+    nlp = spacy.load('es_core_news_sm') # Carga del modelo
+    f = open(path +"/stop_words.txt","r")
 
+    sw = f.readlines()
+
+    # Strips the newline character 
+    for line in sw: 
+        stop_words.append(line.strip()) 
+    
+    
+    
     #Tokenización y limpieza del texto
-
+    
     doc = nlp(texto) # Crea un objeto de spacy tipo nlp
-    tokens = [t.orth_ for t in doc if not t.is_punct | t.is_stop] # Crea una lista con las palabras del texto y elimina los simbolos de puntuación
+    tokens = [token for token in doc if not token.is_punct and len(token) > 2]
+    clean = [token for token in tokens if not str(token) in stop_words and not isinstance(token, int)]
+    
+    if(mode == 'lema'):
+        clean = [token.lemma_.lower() for token in clean]
 
-    #Normalización
-    tokens = [t.lower() for t in words if t.isalpha()]
+    elif(mode == 'stem'):
+        pass
+        #spanishstemmer=SnowballStemmer('spanish')
+        #clean = [spanishstemmer.stem(token) for token in clean]
     
     #Aquí es dónde escogemos las palabras referentes. Se analizarán dos métodos diferentes, la proporción de aparición de una palabra y la tf-idf.
     if(x == 'frecuencia'):
-        
+        word_freq = Counter(clean)
+        common_words = word_freq.most_common(25)
+        return common_words
+
     if(x == 'tfidf'):
+        pass
         
-    if(mode == 'lema'):
-        #Lemalización
-        lemmas = [tok.lemma_.lower() for tok in doc]
-    
-    elif(mode == 'stem'):
-        #Stemming
-        spanishstemmer=SnowballStemmer(‘spanish’)
-        tokens = [t.lower() for t in words if t.isalpha()]
-        stems = [spanishstemmer.stem(token) for token in tokens]
