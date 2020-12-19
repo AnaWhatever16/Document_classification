@@ -10,6 +10,7 @@
 import os
 import argparse
 import pandas as pd
+from collections import Counter
 from crear_corpus import pre_procesar_texto
 
 ## ESTABLECIDOS POR EL USUARIO ##
@@ -40,14 +41,13 @@ def main(directorio, n, modo):
        clean = pre_procesar_texto(doc.lower(), get_modo(modo))
        if(x == 'frecuencia'):
            word_freq = Counter(clean)
-           common_words = word_freq.most_common(25)
-       return common_words
+           common_words = word_freq.most_common()
 
        if(x == 'tfidf'):
            pass
            
        f2 = open(directorio + "/Pre-Glosario/" + i + ".txt","w+") 
-       f2.write(str(tokens))
+       f2.write(str(common_words))
        f2.close()
     # Albergar en un documento los textos correspondientes a cada glosario.
     
