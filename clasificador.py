@@ -41,8 +41,9 @@ def clasificador_documentos(directorio, n_min, rango, glosario):
     for i in temas:
        doc = []
        path = directorio + "/Documentos/" + i + "/"
+       path_query = directorio + "/Glosario/"
        for j in range(n_min, n_min + rango -1):
-           print(path + i.lower() + str(j+1) + ".txt")
+           #print(path + i.lower() + str(j+1) + ".txt")
            f = open(path + i.lower() + str(j+1) + ".txt","r")
            files = f.read()
            
@@ -51,8 +52,11 @@ def clasificador_documentos(directorio, n_min, rango, glosario):
            
        bow, dictionary = process_text(doc)    
        #This is the ifidf model
-       query = tokens = wordpunct_tokenize("salud")
-       tfidf_model(bow, query, dictionary)
+       for filename in os.listdir(path_query):
+           f2 = open(path_query + filename, "r")
+           query = f2.read()
+           query = tokens = wordpunct_tokenize(query)
+           tfidf_model(bow, query, dictionary, filename)
 
 
        #w2v_vector_size = 100
@@ -63,12 +67,15 @@ def clasificador_documentos(directorio, n_min, rango, glosario):
     # Albergar en un documento los textos correspondientes a cada glosario.
     
 
-def tfidf_model(bow, query, dictionary):
+def tfidf_model(bow, query, dictionary, glosario):
        tfidf = models.TfidfModel(bow)
        sims = launch_query(query, tfidf, bow, dictionary)
-       
+       print("Para el tema: " + glosario)
+       print("La relevancia por documento es: ")
        for doc, score in sims:
+           print("Relevancia: ")
            print(score)
+           print("Documento: ")
 
 def clean_docs(docs):
     stemmer = PorterStemmer()
@@ -106,7 +113,7 @@ def launch_query(query, tfidf, bow, dictionary):
     query = tfidf[dictionary.doc2bow(query)]
     index = similarities.SparseMatrixSimilarity(
         bow, num_features=len(dictionary))
-    return sorted(enumerate(index[query]), key=itemgetter(1), reverse=True)
+    return enumerate(index[query])# key=itemgetter(1), reverse=True)
     
 def get_clasificador(c):
    switcher = {

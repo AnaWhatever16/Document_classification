@@ -1,5 +1,5 @@
 import spacy
-from collections import Counter
+
 import nltk
 from nltk import SnowballStemmer
 import os
