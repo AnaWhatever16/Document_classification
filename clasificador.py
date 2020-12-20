@@ -16,6 +16,8 @@ from gensim import corpora, models, similarities
 from gensim.corpora.mmcorpus import MmCorpus
 from nltk.tokenize import wordpunct_tokenize
 from nltk.stem import PorterStemmer
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.metrics import accuracy_score, precision_score, recall_score
 
 ## ESTABLECIDOS POR EL USUARIO ##
 directorio =""
@@ -40,17 +42,16 @@ def clasificador_documentos(directorio, n_min, rango, modelo):
     
     path_results = directorio + "/Resultados/"
     path_glosario = directorio + "/Glosario/"
-
+    
     doc = []
     doc_id = []
     for i in temas:
         path = directorio + "/Documentos/" + i + "/"
         for j in range(n_min, n_min + rango -1):
-            #print(path + i.lower() + str(j+1) + ".txt")
             f = open(path + i.lower() + str(j+1) + ".txt","r")
             files = f.read()
-            
-            #Se almacenan todos los documentos en una lista para poder procesarlos conjuntamente
+	    
+           #Se almacenan todos los documentos en una lista para poder procesarlos conjuntamente
             doc += [files]
             doc_id += [i.lower() + str(j+1)]
 
@@ -59,11 +60,33 @@ def clasificador_documentos(directorio, n_min, rango, modelo):
     #Pre-procesamiento de los documentos de test    
     bow = process_text(doc, dictionary)    
     
-    #Documentos para test 
+    #Esto es para train de Naive Bayes, cambiarme porfavor
+    if(modelo == 2):
+        doc = []
+        label = []
+        for i in temas:
+            path = directorio + "/Documentos/" + i + "/"
+            for j in range(n_min - 1):
+                f = open(path + i.lower() + str(j+1) + ".txt","r")
+                files = f.read()
+                #Se almacenan todos los documentos en una lista para poder procesarlos conjuntamente
+                doc += [files]
+                label += [i.lower()]
 
-    
+    	#Pre-procesamiento de los documentos de test    
+        bow_train = process_text(doc, dictionary)
+        for j,l in enumerate(label):
+            if l == 'deportes':
+                label[j] = 0
+            elif l == 'politica':
+                label[j] = 1
+            elif l == 'salud':
+                label[j] = 2
+        naivebayes_model(bow_train, bow, label, dictionary, path_glosario)
+    	
+    else:
     # Dependiendo del modelo a utilizar se llamará a las funciones X_model
-    lanzar_clasificador(bow, doc_id, dictionary, path_glosario, path_results, modelo)
+    	lanzar_clasificador(bow, doc_id, dictionary, path_glosario, path_results, modelo)
 
 
 ################################
@@ -82,8 +105,6 @@ def guardar_resultados(ranking, doc_id, path_results):
         res.write(doc_string)
     res.close()
 
-    pass
-
 #####################################
 # MODELOS A UTILIZAR EN EL PROYECTO #
 #####################################
@@ -92,10 +113,11 @@ def guardar_resultados(ranking, doc_id, path_results):
 def lanzar_clasificador(bow, doc_id, dictionary, path_glosario, path_results, m):
     if(m == 0):
         tfidf_model(bow, doc_id, dictionary, path_glosario, path_results)
-    if(m == 1):
-        word2vec_model(bow, dictionary, path_glosario)
-    if(m == 2):
+    elif(m == 1):
+        word2vec_model(bow, dictionary, path_glosario, path_results)
+    elif(m == 2):
         naivebayes_model(bow, dictionary, path_glosario)
+        
         
 def tfidf_model(bow, doc_id, dictionary, path_glosario, path_results):
         tfidf = models.TfidfModel(bow)
@@ -112,8 +134,8 @@ def tfidf_model(bow, doc_id, dictionary, path_glosario, path_results):
             guardar_resultados(sims, doc_id, path_res_glosario)
            
            
-def word2vec_model(bow, dictionary, path_glosario):
-    #w2v_vector_size = 100
+def word2vec_model(bow, dictionary, path_glosario, path_results):
+       #w2v_vector_size = 100
        #model_w2v = models.Word2Vec(sentences=texto_limpio, window=5,
        #                     workers=12, vector_size=w2v_vector_size, min_count=1, seed=50)
        #model_w2v.save(directorio + "/Modelos/word2vec_" + i + ".model")
@@ -122,8 +144,13 @@ def word2vec_model(bow, dictionary, path_glosario):
     
     
 #Llamada al modelo de naive bayes
-def naivebayes_model(bow, dictionary, path_glosario):
-    #guardar_resultados()
+def naivebayes_model(bow_train, bow_test, label_train, dictionary, path_glosario):
+
+    naive_bayes = MultinomialNB()
+    naive_bayes.fit(bow_train, label_train)
+    predictions = naive_bayes.predict(bow_test)
+    
+    guardar_resultados()
     pass
 
 
@@ -227,7 +254,7 @@ if arguments['rango']:
         print("ERROR: Introduzca un valor válido mayor que 0")
         exit()
 if arguments['modelo']:
-    if arguments['modelo'] > 0 and arguments['modelo'] < 2:
+    if arguments['modelo'] > 0 and arguments['modelo'] < 3:
         modelo = arguments['modelo']
     else:
         print("ERROR: Introduzca un valor válido mayor que 0 y menor que 2 para un modelo válido")
