@@ -22,9 +22,10 @@ directorio =""
 nmin = 16
 rango = 15
 glosario = ""
+modelo = 0
 STOP_WORDS = []
 
-def clasificador_documentos(directorio, n_min, rango, glosario):
+def clasificador_documentos(directorio, n_min, rango, glosario, modelo):
     
     temas = ["Deportes", "Politica", "Salud"]
     path = ""
@@ -35,48 +36,63 @@ def clasificador_documentos(directorio, n_min, rango, glosario):
     for line in sw: 
         STOP_WORDS.append(line.strip()) 
 
-    
     # En esta función lo que se realizará es cargar los documentos a analizar en una lista
     
     for i in temas:
        doc = []
        path = directorio + "/Documentos/" + i + "/"
-       path_query = directorio + "/Glosario/"
+       path_glosario = directorio + "/Glosario/"
        for j in range(n_min, n_min + rango -1):
            #print(path + i.lower() + str(j+1) + ".txt")
            f = open(path + i.lower() + str(j+1) + ".txt","r")
            files = f.read()
            
-           #texto_limpio = pre_procesar_texto(files.lower(), 'lema')
+           #Se almacenan todos los documentos en una lista para poder procesarlos conjuntamente
            doc += [files]
            
+       #Pre-procesamiento de los documentos de test    
        bow, dictionary = process_text(doc)    
-       #This is the ifidf model
-       for filename in os.listdir(path_query):
-           f2 = open(path_query + filename, "r")
-           query = f2.read()
-           query = tokens = wordpunct_tokenize(query)
-           tfidf_model(bow, query, dictionary, filename)
+       
+       # Dependiendo del modelo a utilizar se llamará a las funciones X_model
+       lanzar_clasificador(bow, dictionary, glosario, path_glosario, modelo)
 
+    
+def guardar_resultados():
+    # Guardar txt con los documentos y los 3 valores para cada glosario
+    # Mostrar por pantalla
+    # Por modelo, ppppprecisión (relevantes/recuperados) y exhaustividad (los que son/los relevantes)
+    # Dibujitos
+    pass
 
-       #w2v_vector_size = 100
+def tfidf_model(bow, glosario, dictionary, path_glosario):
+       for filename in os.listdir(path_glosario):
+           f2 = open(path_glosario + filename, "r")
+           glosario = f2.read()
+           glosario = tokens = wordpunct_tokenize(glosario)
+       
+       tfidf = models.TfidfModel(bow)
+       sims = launch_glosario_tfidf(glosario, tfidf, bow, dictionary)
+
+       #guardar_resultados()
+           
+           
+def word2vec_model(bow, glosario, dictionary, path_glosario):
+    #w2v_vector_size = 100
        #model_w2v = models.Word2Vec(sentences=texto_limpio, window=5,
        #                     workers=12, vector_size=w2v_vector_size, min_count=1, seed=50)
        #model_w2v.save(directorio + "/Modelos/word2vec_" + i + ".model")
+       #guardar_resultados()
+    pass
     
-    # Albergar en un documento los textos correspondientes a cada glosario.
     
+#Llamada al modelo de naive bayes
+def naivebayes_model(bow, glosario, dictionary, path_glosario):
+    #guardar_resultados()
+    pass
 
-def tfidf_model(bow, query, dictionary, glosario):
-       tfidf = models.TfidfModel(bow)
-       sims = launch_query(query, tfidf, bow, dictionary)
-       print("Para el tema: " + glosario)
-       print("La relevancia por documento es: ")
-       for doc, score in sims:
-           print("Relevancia: ")
-           print(score)
-           print("Documento: ")
 
+#Limpieza de los textos, se aplica un stemmer, se tokenizan las palabras, se eliminan las palabras de parada (stop_words)
+# del documento creado a mano, si la palabra no tiene mayor longitud que 2, tambien se considera no relevante.
 def clean_docs(docs):
     stemmer = PorterStemmer()
     final = []
@@ -91,17 +107,22 @@ def clean_docs(docs):
         final.append([stemmer.stem(word) for word in clean])
     return final
 
+
+#Realización del pre-proceso de los textos
 def process_text(docs):
     corpus = clean_docs(docs)
     dictionary = process_corpus(corpus)
     bow = create_bow_from_corpus(corpus, dictionary)
     return bow, dictionary
 
+
+#Se convierte los textos en un diccionario y se almacena en un documentos llamado corpus
 def process_corpus(corpus, pathname=None):
     dictionary = corpora.Dictionary(corpus)
     if pathname:
         dictionary.save(pathname+"/corpus.dict")
     return dictionary
+    
     
 def create_bow_from_corpus(corpus, dictionary, pathname=None):
     bow = [dictionary.doc2bow(text) for text in corpus]
@@ -109,18 +130,26 @@ def create_bow_from_corpus(corpus, dictionary, pathname=None):
         corpora.MmCorpus.serialize(pathname+'/vsm_docs.mm', bow)
     return bow
 
-def launch_query(query, tfidf, bow, dictionary):
-    query = tfidf[dictionary.doc2bow(query)]
+
+#La función launch_glosario hará la comparación entre el glosario y los documentos
+def launch_glosario_tfidf(glosario, tfidf, bow, dictionary):
+    glosario = tfidf[dictionary.doc2bow(glosario)]
     index = similarities.SparseMatrixSimilarity(
         bow, num_features=len(dictionary))
-    return enumerate(index[query])# key=itemgetter(1), reverse=True)
+    return enumerate(index[glosario])# key=itemgetter(1), reverse=True)
     
-def get_clasificador(c):
-   switcher = {
-       0 : 'tfidf',
-       1 : 'vsm'}
+    
+#Dependiendo del valor de la variable modelo, la función lanzar_clasificador utilizará la llamada al proceso correspondiente    
+def lanzar_clasificador(bow, dictionary, glosario, path_glosario, m):
+    if(m == 0):
+        tfidf_model(bow, glosario, dictionary, path_glosario)
+    if(m == 1):
+        word2vec_model(bow, glosario, dictionary, path_glosario)
+    if(m == 2):
+        naivebayes_model(bow, glosario, dictionary, path_glosario)
+        
        
-   return switcher.get(c)
+
    
 ######################
 # PROGRAMA PRINCIPAL #
@@ -148,6 +177,11 @@ parser.add_argument('-g',
                     "--glosario",
                     type=str,
                     help="Directorio donde se encuentran los tres glosarios a utilizar. El path debe de ser desde la raíz hasta la carpeta donde se encuentren. Ej: .../Document_classification/Pre-Glosario")
+                    
+parser.add_argument('-m',
+                    "--modelo",
+                    type=int,
+                    help="Modelo a utilizar para el clasificador. 0 = VSM con tf-idf, 1 = VSM (word2vec), 2 = Naive Bayes")
 
                     
 
@@ -176,8 +210,14 @@ if arguments['glosario']:
 else:
     print("ERROR: Porfavor introduzca palabras válidas")
     exit()
+if arguments['modelo']:
+    if arguments['modelo'] > 0 and arguments['modelo'] < 2:
+        modelo = arguments['modelo']
+    else:
+        print("ERROR: Introduzca un valor válido mayor que 0 y menor que 2 para un modelo válido")
+        exit()
 
-clasificador_documentos(directorio, nmin, rango, glosario)
+clasificador_documentos(directorio, nmin, rango, glosario, modelo)
 
 
 
