@@ -10,6 +10,8 @@
 import os
 import argparse
 import pandas as pd
+import numpy as np
+import itertools
 from operator import itemgetter
 from crear_corpus import pre_procesar_texto
 from gensim import corpora, models, similarities
@@ -18,6 +20,9 @@ from nltk.tokenize import wordpunct_tokenize
 from nltk.stem import PorterStemmer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score, precision_score, recall_score
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction import text 
+from nltk.tokenize.treebank import TreebankWordDetokenizer
 
 ## ESTABLECIDOS POR EL USUARIO ##
 directorio =""
@@ -48,45 +53,41 @@ def clasificador_documentos(directorio, n_min, rango, modelo):
     for i in temas:
         path = directorio + "/Documentos/" + i + "/"
         for j in range(n_min, n_min + rango -1):
-            f = open(path + i.lower() + str(j+1) + ".txt","r")
+            f = open(path + i.lower() + str(j) + ".txt","r")
             files = f.read()
-	    
            #Se almacenan todos los documentos en una lista para poder procesarlos conjuntamente
             doc += [files]
-            doc_id += [i.lower() + str(j+1)]
-
-    dictionary = create_dictionary(path_glosario)
-
-    #Pre-procesamiento de los documentos de test    
-    bow = process_text(doc, dictionary)    
-    
-    #Esto es para train de Naive Bayes, cambiarme porfavor
+            doc_id += [i.lower() + str(j)]
+            
+        #Esto es para train de Naive Bayes, cambiarme porfavor
     if(modelo == 2):
-        doc = []
+        doc_train = []
         label = []
-        for i in temas:
-            path = directorio + "/Documentos/" + i + "/"
-            for j in range(n_min - 1):
-                f = open(path + i.lower() + str(j+1) + ".txt","r")
+        for filename in os.listdir(path_glosario):
+                f = open(path_glosario+filename,"r")
                 files = f.read()
                 #Se almacenan todos los documentos en una lista para poder procesarlos conjuntamente
-                doc += [files]
-                label += [i.lower()]
+                doc_train += [files]
+                label += [filename[:-13]]
 
-    	#Pre-procesamiento de los documentos de test    
-        bow_train = process_text(doc, dictionary)
         for j,l in enumerate(label):
-            if l == 'deportes':
+            if l == temas[0]:
                 label[j] = 0
-            elif l == 'politica':
+            elif l == temas[1]:
                 label[j] = 1
-            elif l == 'salud':
+            elif l == temas[2]:
                 label[j] = 2
-        naivebayes_model(bow_train, bow, label, dictionary, path_glosario)
+        naivebayes_model(doc_id, doc_train,doc,label, path_glosario, path_results)
     	
     else:
+        dictionary = create_dictionary(path_glosario)
+
+    #Pre-procesamiento de los documentos de test    
+        bow = process_text(doc, dictionary)    
+    
+
     # Dependiendo del modelo a utilizar se llamará a las funciones X_model
-    	lanzar_clasificador(bow, doc_id, dictionary, path_glosario, path_results, modelo)
+        lanzar_clasificador(bow, doc_id, dictionary, path_glosario, path_results, modelo)
 
 
 ################################
@@ -100,7 +101,7 @@ def guardar_resultados(ranking, doc_id, path_results):
     # Dibujitos
 
     res = open(path_results, "w")
-    for doc, score in ranking:
+    for doc, score in enumerate(ranking):
         doc_string = doc_id[doc] + ' ' + str(score) + '\n'
         res.write(doc_string)
     res.close()
@@ -110,7 +111,7 @@ def guardar_resultados(ranking, doc_id, path_results):
 #####################################
 
 #Dependiendo del valor de la variable modelo, la función lanzar_clasificador utilizará la llamada al proceso correspondiente    
-def lanzar_clasificador(bow, doc_id, dictionary, path_glosario, path_results, m):
+def lanzar_clasificador(bow, doc_id, path_glosario, path_results, m):
     if(m == 0):
         tfidf_model(bow, doc_id, dictionary, path_glosario, path_results)
     elif(m == 1):
@@ -144,13 +145,26 @@ def word2vec_model(bow, dictionary, path_glosario, path_results):
     
     
 #Llamada al modelo de naive bayes
-def naivebayes_model(bow_train, bow_test, label_train, dictionary, path_glosario):
+def naivebayes_model(doc_id, doc_train, doc, label_train, path_glosario, path_results):
+    test = []
+    cv = CountVectorizer(strip_accents = None, preprocessor = None, stop_words = None)
+    doc_train = cv.fit_transform(doc_train)
+    doc = clean_docs(doc)
+    
+    for s in doc:
+        test += ["".join([" "+i if not i.startswith("'") else i for i in s]).strip()]
+
+    doc = cv.transform(test)
+
 
     naive_bayes = MultinomialNB()
-    naive_bayes.fit(bow_train, label_train)
-    predictions = naive_bayes.predict(bow_test)
-    
-    guardar_resultados()
+    naive_bayes.fit(doc_train, label_train)
+    predictions = naive_bayes.predict(doc)
+    print(predictions)
+    for filename in os.listdir(path_glosario):
+        path_res_glosario = path_results+ "/Naive-Bayes/naivesbayes_" + filename
+        #predictions = predictions.tolist()
+        guardar_resultados(predictions, doc_id, path_res_glosario)
     pass
 
 
@@ -158,6 +172,9 @@ def naivebayes_model(bow_train, bow_test, label_train, dictionary, path_glosario
 # MÉTODOS PARA PREPROCESAR TEXTOS #
 ###################################
 
+
+
+    
 #Limpieza de los textos, se aplica un stemmer, se tokenizan las palabras, se eliminan las palabras de parada (stop_words)
 # del documento creado a mano, si la palabra no tiene mayor longitud que 2, tambien se considera no relevante.
 def clean_docs(docs):
