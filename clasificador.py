@@ -21,13 +21,11 @@ from nltk.stem import PorterStemmer
 directorio =""
 nmin = 16
 rango = 15
-glosario = ""
 modelo = 0
 
-resultados = ""
 STOP_WORDS = []
 
-def clasificador_documentos(directorio, n_min, rango, glosario, modelo):
+def clasificador_documentos(directorio, n_min, rango, modelo):
     
     temas = ["Deportes", "Politica", "Salud"]
     path = ""
@@ -40,34 +38,50 @@ def clasificador_documentos(directorio, n_min, rango, glosario, modelo):
 
     # En esta función lo que se realizará es cargar los documentos a analizar en una lista
     
+    path_results = directorio + "/Resultados/"
+    path_glosario = directorio + "/Glosario/"
+
+    doc = []
+    doc_id = []
     for i in temas:
-       doc = []
-       path = directorio + "/Documentos/" + i + "/"
-       path_glosario = directorio + "/Glosario/"
-       for j in range(n_min, n_min + rango -1):
-           #print(path + i.lower() + str(j+1) + ".txt")
-           f = open(path + i.lower() + str(j+1) + ".txt","r")
-           files = f.read()
-           
-           #Se almacenan todos los documentos en una lista para poder procesarlos conjuntamente
-           doc += [files]
-           
-       #Pre-procesamiento de los documentos de test    
-       bow, dictionary = process_text(doc)    
-       
-       # Dependiendo del modelo a utilizar se llamará a las funciones X_model
-       lanzar_clasificador(bow, dictionary, path_glosario, modelo)
+        path = directorio + "/Documentos/" + i + "/"
+        for j in range(n_min, n_min + rango -1):
+            #print(path + i.lower() + str(j+1) + ".txt")
+            f = open(path + i.lower() + str(j+1) + ".txt","r")
+            files = f.read()
+            
+            #Se almacenan todos los documentos en una lista para poder procesarlos conjuntamente
+            doc += [files]
+            doc_id += [i.lower() + str(j+1)]
+
+    dictionary = create_dictionary(path_glosario)
+
+    #Pre-procesamiento de los documentos de test    
+    bow = process_text(doc, dictionary)    
+    
+    #Documentos para test 
+
+    
+    # Dependiendo del modelo a utilizar se llamará a las funciones X_model
+    lanzar_clasificador(bow, doc_id, dictionary, path_glosario, path_results, modelo)
 
 
 ################################
 # ALMACENAMIENTO DE RESULTADOS #
 ################################
 
-def guardar_resultados(path_results):
+def guardar_resultados(ranking, doc_id, path_results):
     # Guardar txt con los documentos y los 3 valores para cada glosario
     # Mostrar por pantalla
     # Por modelo, ppppprecisión (relevantes/recuperados) y exhaustividad (los que son/los relevantes)
     # Dibujitos
+
+    res = open(path_results, "w")
+    for doc, score in ranking:
+        doc_string = doc_id[doc] + ' ' + str(score) + '\n'
+        res.write(doc_string)
+    res.close()
+
     pass
 
 #####################################
@@ -75,24 +89,27 @@ def guardar_resultados(path_results):
 #####################################
 
 #Dependiendo del valor de la variable modelo, la función lanzar_clasificador utilizará la llamada al proceso correspondiente    
-def lanzar_clasificador(bow, dictionary, path_glosario, m):
+def lanzar_clasificador(bow, doc_id, dictionary, path_glosario, path_results, m):
     if(m == 0):
-        tfidf_model(bow, dictionary, path_glosario)
+        tfidf_model(bow, doc_id, dictionary, path_glosario, path_results)
     if(m == 1):
         word2vec_model(bow, dictionary, path_glosario)
     if(m == 2):
         naivebayes_model(bow, dictionary, path_glosario)
         
-def tfidf_model(bow, dictionary, path_glosario):
-       for filename in os.listdir(path_glosario):
-           f2 = open(path_glosario + filename, "r")
-           glosario = f2.read()
-           glosario = wordpunct_tokenize(glosario)
-       
-       tfidf = models.TfidfModel(bow)
-       sims = launch_glosario_tfidf(glosario, tfidf, bow, dictionary)
+def tfidf_model(bow, doc_id, dictionary, path_glosario, path_results):
+        tfidf = models.TfidfModel(bow)
+        index = similarities.SparseMatrixSimilarity(bow, num_features=len(dictionary))
 
-       #guardar_resultados()
+        for filename in os.listdir(path_glosario):
+            f2 = open(path_glosario + filename, "r")
+            glosario = f2.read()
+            clean_glosario = wordpunct_tokenize(glosario)
+            tfidf_glosario = tfidf[dictionary.doc2bow(clean_glosario)]
+            sims = enumerate(index[tfidf_glosario])
+
+            path_res_glosario = path_results+ "/tfidf/tfidf_" + filename
+            guardar_resultados(sims, doc_id, path_res_glosario)
            
            
 def word2vec_model(bow, dictionary, path_glosario):
@@ -131,8 +148,16 @@ def clean_docs(docs):
     return final
 
 #Se convierte los textos en un diccionario y se almacena en un documentos llamado corpus
-def create_dictionary(corpus, pathname=None):
-    dictionary = corpora.Dictionary(corpus)
+def create_dictionary(path_glosario, pathname= None):
+    dictionary = corpora.Dictionary()
+    
+    for filename in os.listdir(path_glosario):
+        f2 = open(path_glosario + filename, "r")
+        glosario = f2.read()
+        #glosario_clean =  wordpunct_tokenize(glosario) ## GUARDAR LOS TRES DICCIONARIOS JUNTOS!!!
+        tokens = [word for word in glosario.split()]
+        dictionary.add_documents([tokens])
+
     if pathname:
         dictionary.save(pathname+"/corpus.dict")
     return dictionary
@@ -145,28 +170,12 @@ def create_bow_from_corpus(corpus, dictionary, pathname=None):
     return bow
     
 #Realización del pre-proceso de los textos
-def process_text(docs):
+def process_text(docs, dictionary):
     corpus = clean_docs(docs)
-    dictionary = create_dictionary(corpus)
     bow = create_bow_from_corpus(corpus, dictionary)
-    return bow, dictionary
+    return bow
 
 
-
-#####################################
-# COMPARACIÓN GLOSARIO - DOCUMENTOS #
-#####################################
-
-#La función launch_glosario hará la comparación entre el glosario y los documentos
-def launch_glosario_tfidf(glosario, tfidf, bow, dictionary):
-    glosario = tfidf[dictionary.doc2bow(glosario)]
-    index = similarities.SparseMatrixSimilarity(
-        bow, num_features=len(dictionary))
-    return enumerate(index[glosario])# key=itemgetter(1), reverse=True)
-    
-
-
-   
 ###########################################
 # MÉTODOS PARA OBTENER DATOS POR PANTALLA #
 ###########################################
@@ -188,21 +197,11 @@ parser.add_argument('-r',
                     "--rango",
                     type=int,
                     help="Número de documentos totales a utilizar para la clasificación de test (Por ejemplo si deseamos 15 documentos, del 16 al 30)")
-                    
-parser.add_argument('-g',
-                    "--glosario",
-                    type=str,
-                    help="Directorio donde se encuentran los tres glosarios a utilizar. El path debe de ser desde la raíz hasta la carpeta donde se encuentren. Ej: .../Document_classification/Pre-Glosario")
-                    
+                                        
 parser.add_argument('-m',
                     "--modelo",
                     type=int,
                     help="Modelo a utilizar para el clasificador. 0 = VSM con tf-idf, 1 = VSM (word2vec), 2 = Naive Bayes")
-
-parser.add_argument('-v',
-                    "--valores",
-                    type=str,
-                    help = "Path al documento donde guardar los los resultados")
 
 
                     
@@ -227,22 +226,14 @@ if arguments['rango']:
     else:
         print("ERROR: Introduzca un valor válido mayor que 0")
         exit()
-if arguments['glosario']:
-    glosario = arguments['glosario']
-
 if arguments['modelo']:
     if arguments['modelo'] > 0 and arguments['modelo'] < 2:
         modelo = arguments['modelo']
     else:
         print("ERROR: Introduzca un valor válido mayor que 0 y menor que 2 para un modelo válido")
         exit()
-if arguments['valores']:
-    resultados = arguments['valores']
-else:
-    print("ERROR: Porfavor introduzca palabras válidas para resultados")
-    exit()
 
-clasificador_documentos(directorio, nmin, rango, glosario, modelo)
+clasificador_documentos(directorio, nmin, rango, modelo)
 
 
 
