@@ -25,10 +25,17 @@ glosario = ""
 modelo = 0
 STOP_WORDS = []
 
+temas = ["Deportes", "Politica", "Salud"]
+
 def clasificador_documentos(directorio, n_min, rango, glosario, modelo):
     
-    temas = ["Deportes", "Politica", "Salud"]
+    modelos_tema = {} 
+    sim_tema = {}
+
     path = ""
+    path_glosario = directorio + "/Glosario/"
+    dictionary = create_dictionary(path_glosario)
+
     f = open(directorio +"/stop_words.txt","r")
     sw = f.readlines()
 
@@ -36,25 +43,34 @@ def clasificador_documentos(directorio, n_min, rango, glosario, modelo):
     for line in sw: 
         STOP_WORDS.append(line.strip()) 
 
-    # En esta función lo que se realizará es cargar los documentos a analizar en una lista
-    
     for i in temas:
-       doc = []
-       path = directorio + "/Documentos/" + i + "/"
-       path_glosario = directorio + "/Glosario/"
-       for j in range(n_min, n_min + rango -1):
-           #print(path + i.lower() + str(j+1) + ".txt")
-           f = open(path + i.lower() + str(j+1) + ".txt","r")
-           files = f.read()
+        path = directorio + "/Documentos/" + i + "/"
+        
+        train_docs = []
+        for j in range(0, n_min-1):
+            #print(path + i.lower() + str(j+1) + ".txt")
+            f = open(path + i.lower() + str(j+1) + ".txt","r")
+            files = f.read()
            
-           #Se almacenan todos los documentos en una lista para poder procesarlos conjuntamente
-           doc += [files]
+            #Se almacenan todos los documentos en una lista para poder procesarlos conjuntamente
+            train_docs += [files]
+
+        #Pre-procesamiento de los documentos de train y creacion de los modelos   
+        train_bow = process_text_doc2bow(train_docs, dictionary)  
+        modelos_tema[i], sim_tema[i] = crear_modelos(train_bow, dictionary, modelo)
+
+        test_docs = []
+        #Documentos para test 
+        for j in range(n_min, n_min + rango -1):
+            #print(path + i.lower() + str(j+1) + ".txt")
+            f = open(path + i.lower() + str(j+1) + ".txt","r")
+            files = f.read()
            
-       #Pre-procesamiento de los documentos de test    
-       bow, dictionary = process_text(doc)    
+            #Se almacenan todos los documentos en una lista para poder procesarlos conjuntamente
+            test_docs += [files]   
        
-       # Dependiendo del modelo a utilizar se llamará a las funciones X_model
-       lanzar_clasificador(bow, dictionary, glosario, path_glosario, modelo)
+    # Dependiendo del modelo a utilizar se llamará a las funciones X_model
+    lanzar_clasificador(test_docs, dictionary, modelos_tema, sim_tema)
 
     
 def guardar_resultados():
@@ -64,16 +80,10 @@ def guardar_resultados():
     # Dibujitos
     pass
 
-def tfidf_model(bow, glosario, dictionary, path_glosario):
-       for filename in os.listdir(path_glosario):
-           f2 = open(path_glosario + filename, "r")
-           glosario = f2.read()
-           glosario = tokens = wordpunct_tokenize(glosario)
-       
-       tfidf = models.TfidfModel(bow)
-       sims = launch_glosario_tfidf(glosario, tfidf, bow, dictionary)
-
-       #guardar_resultados()
+def tfidf_model(bow, dictionary):     
+    tfidf = models.TfidfModel(bow)
+    index = similarities.SparseMatrixSimilarity(bow, num_features=len(dictionary))
+    return tfidf, index
            
            
 def word2vec_model(bow, glosario, dictionary, path_glosario):
@@ -109,22 +119,29 @@ def clean_docs(docs):
 
 
 #Realización del pre-proceso de los textos
-def process_text(docs):
+def process_text_doc2bow(docs, dictionary):
     corpus = clean_docs(docs)
-    dictionary = process_corpus(corpus)
-    bow = create_bow_from_corpus(corpus, dictionary)
-    return bow, dictionary
+    bow = create_bow_from_dict(corpus, dictionary)
+    return bow
 
 
 #Se convierte los textos en un diccionario y se almacena en un documentos llamado corpus
-def process_corpus(corpus, pathname=None):
-    dictionary = corpora.Dictionary(corpus)
+def create_dictionary(path_glosario, pathname= None):
+    dictionary = corpora.Dictionary()
+    
+    for filename in os.listdir(path_glosario):
+        f2 = open(path_glosario + filename, "r")
+        glosario = f2.read()
+        glosario_clean = clean_docs(glosario) ## GUARDAR LOS TRES DICCIONARIOS JUNTOS!!!
+        #glosario_clean = process_text_doc2bow(glosario)
+        dictionary.add_documents(glosario_clean)
+
     if pathname:
         dictionary.save(pathname+"/corpus.dict")
     return dictionary
     
     
-def create_bow_from_corpus(corpus, dictionary, pathname=None):
+def create_bow_from_dict(corpus, dictionary, pathname=None):
     bow = [dictionary.doc2bow(text) for text in corpus]
     if pathname:
         corpora.MmCorpus.serialize(pathname+'/vsm_docs.mm', bow)
@@ -134,22 +151,32 @@ def create_bow_from_corpus(corpus, dictionary, pathname=None):
 #La función launch_glosario hará la comparación entre el glosario y los documentos
 def launch_glosario_tfidf(glosario, tfidf, bow, dictionary):
     glosario = tfidf[dictionary.doc2bow(glosario)]
-    index = similarities.SparseMatrixSimilarity(
-        bow, num_features=len(dictionary))
+    
     return enumerate(index[glosario])# key=itemgetter(1), reverse=True)
     
     
-#Dependiendo del valor de la variable modelo, la función lanzar_clasificador utilizará la llamada al proceso correspondiente    
-def lanzar_clasificador(bow, dictionary, glosario, path_glosario, m):
+#Dependiendo del valor de la variable modelo, la función crear_modelos utilizará la llamada al proceso correspondiente    
+def crear_modelos(train_bow, dictionary, m):
     if(m == 0):
-        tfidf_model(bow, glosario, dictionary, path_glosario)
+        model, index = tfidf_model(train_bow, dictionary)
+        #Crear diccionario con glosario
     if(m == 1):
         word2vec_model(bow, glosario, dictionary, path_glosario)
     if(m == 2):
         naivebayes_model(bow, glosario, dictionary, path_glosario)
-        
-       
+    
+    return model, index
 
+def lanzar_clasificador(test_docs, dictionary, modelos_tema, sim_tema):
+    for doc in test_docs:
+        #Pre-procesamiento del documento de test    
+        test_bow = process_text_doc2bow(doc, dictionary) 
+        for i in temas:
+            tfidf = modelos_tema[i]
+            index = sim_tema[i]
+            doc_tfidf = tfidf[test_bow]
+            sim = index[doc_tfidf]
+    print("END")
    
 ######################
 # PROGRAMA PRINCIPAL #
@@ -207,9 +234,9 @@ if arguments['rango']:
         exit()
 if arguments['glosario']:
     glosario = arguments['glosario']
-else:
-    print("ERROR: Porfavor introduzca palabras válidas")
-    exit()
+# else:
+#     print("ERROR: Porfavor introduzca palabras válidas")
+#     exit()
 if arguments['modelo']:
     if arguments['modelo'] > 0 and arguments['modelo'] < 2:
         modelo = arguments['modelo']
