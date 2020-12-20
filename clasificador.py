@@ -58,14 +58,31 @@ def clasificador_documentos(directorio, n_min, rango, glosario, modelo):
        # Dependiendo del modelo a utilizar se llamará a las funciones X_model
        lanzar_clasificador(bow, dictionary, path_glosario, modelo)
 
-    
-def guardar_resultados():
+
+################################
+# ALMACENAMIENTO DE RESULTADOS #
+################################
+
+def guardar_resultados(path_results):
     # Guardar txt con los documentos y los 3 valores para cada glosario
     # Mostrar por pantalla
     # Por modelo, ppppprecisión (relevantes/recuperados) y exhaustividad (los que son/los relevantes)
     # Dibujitos
     pass
 
+#####################################
+# MODELOS A UTILIZAR EN EL PROYECTO #
+#####################################
+
+#Dependiendo del valor de la variable modelo, la función lanzar_clasificador utilizará la llamada al proceso correspondiente    
+def lanzar_clasificador(bow, dictionary, path_glosario, m):
+    if(m == 0):
+        tfidf_model(bow, dictionary, path_glosario)
+    if(m == 1):
+        word2vec_model(bow, dictionary, path_glosario)
+    if(m == 2):
+        naivebayes_model(bow, dictionary, path_glosario)
+        
 def tfidf_model(bow, dictionary, path_glosario):
        for filename in os.listdir(path_glosario):
            f2 = open(path_glosario + filename, "r")
@@ -93,6 +110,10 @@ def naivebayes_model(bow, dictionary, path_glosario):
     pass
 
 
+###################################
+# MÉTODOS PARA PREPROCESAR TEXTOS #
+###################################
+
 #Limpieza de los textos, se aplica un stemmer, se tokenizan las palabras, se eliminan las palabras de parada (stop_words)
 # del documento creado a mano, si la palabra no tiene mayor longitud que 2, tambien se considera no relevante.
 def clean_docs(docs):
@@ -109,17 +130,8 @@ def clean_docs(docs):
         final.append([stemmer.stem(word) for word in clean])
     return final
 
-
-#Realización del pre-proceso de los textos
-def process_text(docs):
-    corpus = clean_docs(docs)
-    dictionary = process_corpus(corpus)
-    bow = create_bow_from_corpus(corpus, dictionary)
-    return bow, dictionary
-
-
 #Se convierte los textos en un diccionario y se almacena en un documentos llamado corpus
-def process_corpus(corpus, pathname=None):
+def create_dictionary(corpus, pathname=None):
     dictionary = corpora.Dictionary(corpus)
     if pathname:
         dictionary.save(pathname+"/corpus.dict")
@@ -131,7 +143,19 @@ def create_bow_from_corpus(corpus, dictionary, pathname=None):
     if pathname:
         corpora.MmCorpus.serialize(pathname+'/vsm_docs.mm', bow)
     return bow
+    
+#Realización del pre-proceso de los textos
+def process_text(docs):
+    corpus = clean_docs(docs)
+    dictionary = create_dictionary(corpus)
+    bow = create_bow_from_corpus(corpus, dictionary)
+    return bow, dictionary
 
+
+
+#####################################
+# COMPARACIÓN GLOSARIO - DOCUMENTOS #
+#####################################
 
 #La función launch_glosario hará la comparación entre el glosario y los documentos
 def launch_glosario_tfidf(glosario, tfidf, bow, dictionary):
@@ -140,22 +164,12 @@ def launch_glosario_tfidf(glosario, tfidf, bow, dictionary):
         bow, num_features=len(dictionary))
     return enumerate(index[glosario])# key=itemgetter(1), reverse=True)
     
-    
-#Dependiendo del valor de la variable modelo, la función lanzar_clasificador utilizará la llamada al proceso correspondiente    
-def lanzar_clasificador(bow, dictionary, path_glosario, m):
-    if(m == 0):
-        tfidf_model(bow, dictionary, path_glosario)
-    if(m == 1):
-        word2vec_model(bow, dictionary, path_glosario)
-    if(m == 2):
-        naivebayes_model(bow, dictionary, path_glosario)
-        
-       
+
 
    
-######################
-# PROGRAMA PRINCIPAL #
-######################
+###########################################
+# MÉTODOS PARA OBTENER DATOS POR PANTALLA #
+###########################################
 
 # Argparse - Parámetros a ser introducidos por el usuario
 parser = argparse.ArgumentParser(description="Search by terms")
