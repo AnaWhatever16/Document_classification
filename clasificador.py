@@ -23,6 +23,8 @@ nmin = 16
 rango = 15
 glosario = ""
 modelo = 0
+
+resultados = ""
 STOP_WORDS = []
 
 def clasificador_documentos(directorio, n_min, rango, glosario, modelo):
@@ -54,7 +56,7 @@ def clasificador_documentos(directorio, n_min, rango, glosario, modelo):
        bow, dictionary = process_text(doc)    
        
        # Dependiendo del modelo a utilizar se llamará a las funciones X_model
-       lanzar_clasificador(bow, dictionary, glosario, path_glosario, modelo)
+       lanzar_clasificador(bow, dictionary, path_glosario, modelo)
 
     
 def guardar_resultados():
@@ -64,11 +66,11 @@ def guardar_resultados():
     # Dibujitos
     pass
 
-def tfidf_model(bow, glosario, dictionary, path_glosario):
+def tfidf_model(bow, dictionary, path_glosario):
        for filename in os.listdir(path_glosario):
            f2 = open(path_glosario + filename, "r")
            glosario = f2.read()
-           glosario = tokens = wordpunct_tokenize(glosario)
+           glosario = wordpunct_tokenize(glosario)
        
        tfidf = models.TfidfModel(bow)
        sims = launch_glosario_tfidf(glosario, tfidf, bow, dictionary)
@@ -76,7 +78,7 @@ def tfidf_model(bow, glosario, dictionary, path_glosario):
        #guardar_resultados()
            
            
-def word2vec_model(bow, glosario, dictionary, path_glosario):
+def word2vec_model(bow, dictionary, path_glosario):
     #w2v_vector_size = 100
        #model_w2v = models.Word2Vec(sentences=texto_limpio, window=5,
        #                     workers=12, vector_size=w2v_vector_size, min_count=1, seed=50)
@@ -86,7 +88,7 @@ def word2vec_model(bow, glosario, dictionary, path_glosario):
     
     
 #Llamada al modelo de naive bayes
-def naivebayes_model(bow, glosario, dictionary, path_glosario):
+def naivebayes_model(bow, dictionary, path_glosario):
     #guardar_resultados()
     pass
 
@@ -140,13 +142,13 @@ def launch_glosario_tfidf(glosario, tfidf, bow, dictionary):
     
     
 #Dependiendo del valor de la variable modelo, la función lanzar_clasificador utilizará la llamada al proceso correspondiente    
-def lanzar_clasificador(bow, dictionary, glosario, path_glosario, m):
+def lanzar_clasificador(bow, dictionary, path_glosario, m):
     if(m == 0):
-        tfidf_model(bow, glosario, dictionary, path_glosario)
+        tfidf_model(bow, dictionary, path_glosario)
     if(m == 1):
-        word2vec_model(bow, glosario, dictionary, path_glosario)
+        word2vec_model(bow, dictionary, path_glosario)
     if(m == 2):
-        naivebayes_model(bow, glosario, dictionary, path_glosario)
+        naivebayes_model(bow, dictionary, path_glosario)
         
        
 
@@ -183,6 +185,12 @@ parser.add_argument('-m',
                     type=int,
                     help="Modelo a utilizar para el clasificador. 0 = VSM con tf-idf, 1 = VSM (word2vec), 2 = Naive Bayes")
 
+parser.add_argument('-v',
+                    "--valores",
+                    type=str,
+                    help = "Path al documento donde guardar los los resultados")
+
+
                     
 
 # Parseo de los argumentos
@@ -191,7 +199,7 @@ arguments = vars(parser.parse_args())
 if arguments['directorio']:
     directorio = arguments['directorio']
 else:
-    print("ERROR: Porfavor introduzca palabras válidas")
+    print("ERROR: Porfavor introduzca palabras válidas para el directorio")
     exit()
 if arguments['nmin']:
     if arguments['nmin'] > 0:
@@ -207,15 +215,18 @@ if arguments['rango']:
         exit()
 if arguments['glosario']:
     glosario = arguments['glosario']
-else:
-    print("ERROR: Porfavor introduzca palabras válidas")
-    exit()
+
 if arguments['modelo']:
     if arguments['modelo'] > 0 and arguments['modelo'] < 2:
         modelo = arguments['modelo']
     else:
         print("ERROR: Introduzca un valor válido mayor que 0 y menor que 2 para un modelo válido")
         exit()
+if arguments['valores']:
+    resultados = arguments['valores']
+else:
+    print("ERROR: Porfavor introduzca palabras válidas para resultados")
+    exit()
 
 clasificador_documentos(directorio, nmin, rango, glosario, modelo)
 
