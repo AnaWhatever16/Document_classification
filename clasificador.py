@@ -175,7 +175,6 @@ def word2vec_model(bow, doc_id, path_glosario, path_results):
         for j, doc in enumerate(vectorized_docs):
             cs = cosine_similarity(np.array(g).reshape(1,-1),np.array(doc).reshape(1, -1))
             similarities.append((cs[0][0]))
-        print(similarities, '\n\n')
         path_res_glosario = path_results+ "word2vec/word2vec_" + glosario_id[i]
         guardar_resultados(similarities, doc_id, path_res_glosario)
     
