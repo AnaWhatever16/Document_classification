@@ -103,19 +103,32 @@ def lanzar_clasificador(bow, doc_id, dictionary, path_glosario, path_results, m)
         
         
 def tfidf_model(bow, doc_id, dictionary, path_glosario, path_results):
-        tfidf = models.TfidfModel(bow)
-        index = similarities.SparseMatrixSimilarity(bow, num_features=len(dictionary))
+    tfidf = models.TfidfModel(bow)
+    index = similarities.SparseMatrixSimilarity(bow, num_features=len(dictionary))
 
-        for filename in os.listdir(path_glosario):
-            f2 = open(path_glosario + filename, "r")
-            glosario = f2.read()
-            clean_glosario = wordpunct_tokenize(glosario)
-            tfidf_glosario = tfidf[dictionary.doc2bow(clean_glosario)]
-            sims = index[tfidf_glosario]
+    #glosario_dict={}
+    for filename in os.listdir(path_glosario):
+        f2 = open(path_glosario + filename, "r")
+        glosario = f2.read()
+        clean_glosario = wordpunct_tokenize(glosario)
+        tfidf_glosario = tfidf[dictionary.doc2bow(clean_glosario)]
+        sims = index[tfidf_glosario]
 
-            path_res_glosario = path_results+ "/tfidf/tfidf_" + filename
-            guardar_resultados(sims, doc_id, path_res_glosario)
-           
+        path_res_glosario = path_results+ "/tfidf/tfidf_" + filename
+        guardar_resultados(sims, doc_id, path_res_glosario)
+
+    #    glosario_dict[filename][doc_id] = sims
+    
+    # for i in doc_id:
+    #     high_value = 0
+    #     unknown
+    #     for filename in os.listdir(path_glosario):
+    #         value = glosario_dict[filename][i]
+    #         if value > high_value:
+    #             high_value = value
+    #             unknown = false
+    #         elif value == high_value:
+    #             unknown
            
 def word2vec_model(bow, dictionary, path_glosario, path_results):
        #w2v_vector_size = 100
