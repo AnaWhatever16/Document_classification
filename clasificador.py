@@ -157,12 +157,10 @@ def word2vec_model(bow, doc_id, path_glosario, path_results):
     tokens_glosario = []
     bow = clean_docs(bow)
     
-    i=0
     for filename in os.listdir(path_glosario):
         f2 = open(path_glosario + filename, "r")
         glosario += [f2.read()]
         glosario_id.append(filename)
-        i+=1
     
     for g in glosario:
         tokens_glosario += [wordpunct_tokenize(g)]
