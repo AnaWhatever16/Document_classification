@@ -22,6 +22,7 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score, precision_score, recall_score
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction import text 
+from sklearn.metrics.pairwise import cosine_similarity
 from nltk.tokenize.treebank import TreebankWordDetokenizer
 from evaluator import get_evaluation
 
@@ -61,7 +62,7 @@ def clasificador_documentos(directorio, n_min, rango, modelo):
             doc_id += [i.lower() + str(j)]
             
         #Esto es para train de Naive Bayes, cambiarme porfavor
-    if(modelo != 2):
+    if(modelo == 0):
         dictionary = create_dictionary(path_glosario)
     #Pre-procesamiento de los documentos de test    
         bow = process_text(doc, dictionary)    
@@ -107,7 +108,7 @@ def lanzar_clasificador(bow, doc_id, dictionary, path_glosario, path_results, m)
     if(m == 0):
         tfidf_model(bow, doc_id, dictionary, path_glosario, path_results)
     elif(m == 1):
-        word2vec_model(bow, dictionary, path_glosario, path_results)
+        word2vec_model(bow, doc_id, path_glosario, path_results)
     elif(m == 2):
         naivebayes_model(bow, doc_id, path_glosario, path_results)
         
@@ -136,14 +137,51 @@ def tfidf_model(bow, doc_id, dictionary, path_glosario, path_results):
     guardar_clasificacion(max_values, doc_id, path_results + "/Clasificacion/tfidf.txt")
     guardar_evaluacion(max_values, path_results + "/Evaluacion/tfidf_eval.txt")
       
-def word2vec_model(bow, dictionary, path_glosario, path_results):
-       #w2v_vector_size = 100
-       #model_w2v = models.Word2Vec(sentences=texto_limpio, window=5,
-       #                     workers=12, vector_size=w2v_vector_size, min_count=1, seed=50)
-       #model_w2v.save(directorio + "/Modelos/word2vec_" + i + ".model")
-       #guardar_resultados()
-    pass
+def word2vec_model(bow, doc_id, path_glosario, path_results):
     
+    bow = clean_docs(bow)
+    w2v_model = models.Word2Vec(bow, size=100, window=5, sg=1, workers=4)
+
+    doc_vec = []
+    for doc in bow:
+        embeddings = []
+        for tok in doc:
+            if tok in w2v_model.wv.vocab:
+                embeddings.append(w2v_model.wv.word_vec(tok))
+            else:
+                embeddings.append(np.random.rand(100))
+
+        embeddings = np.mean(embeddings, axis=0)
+        doc_vec.append(embeddings)
+    
+    cs_list = []
+
+    #cv = CountVectorizer(strip_accents = None, preprocessor = None, stop_words = None)
+    for filename in os.listdir(path_glosario):
+        f2 = open(path_glosario + filename, "r")
+        glosario = f2.read()
+        glosario = wordpunct_tokenize(glosario)
+        
+        embedded_glosario=[]
+        for tok in glosario:
+            if tok in w2v_model.wv.vocab:
+                embedded_glosario.append(w2v_model.wv.word_vec(tok))
+            else:
+                embedded_glosario.append(np.random.rand(100))
+
+        embedded_glosario = np.mean(embedded_glosario, axis=0)
+
+        cs_list=[]
+        for i,d_vec in enumerate(doc_vec):
+            cs = cosine_similarity(np.array(embedded_glosario).reshape(1,-1),np.array(d_vec).reshape(1, -1))
+            cs_list.append((i,cs[0][0]))
+
+        print(cs_list, '\n\n')
+        
+        path_res_glosario = path_results+ "word2vec/word2vec_" + filename
+        guardar_resultados(cs_list, doc_id, path_res_glosario)
+        #final[cambiar_singlelabel(filename[:-13])] = sims.tolist()
+
     
 #Llamada al modelo de naive bayes
 def naivebayes_model(bow, doc_id, path_glosario, path_results):
