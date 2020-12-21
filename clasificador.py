@@ -170,13 +170,25 @@ def word2vec_model(bow, doc_id, path_glosario, path_results):
     query_embedding = [get_embeddings_from_document(w2v_model, g) for g in tokens_glosario]
     vectorized_docs = [get_embeddings_from_document(w2v_model, b) for b in bow]    
     
+    final = pd.DataFrame()
+    max_values = pd.DataFrame()
     for i, g in enumerate(query_embedding):
         similarities = []
         for j, doc in enumerate(vectorized_docs):
             cs = cosine_similarity(np.array(g).reshape(1,-1),np.array(doc).reshape(1, -1))
             similarities.append((cs[0][0]))
+        print(similarities)
         path_res_glosario = path_results+ "word2vec/word2vec_" + glosario_id[i]
         guardar_resultados(similarities, doc_id, path_res_glosario)
+        final[cambiar_singlelabel(glosario_id[i][:-13])] = similarities
+
+
+    max_values['Documento'] = doc_id
+    max_values['Real'] = cambiar_label([i[:-2] for i in doc_id])
+    max_values['Valor'] = final.max(axis = 1)
+    max_values['Predicciones'] = final.idxmax(axis=1)
+    guardar_clasificacion(max_values, doc_id, path_results + "/Clasificacion/word2vec.txt")
+    guardar_evaluacion(max_values, path_results + "/Evaluacion/word2vec_eval.txt")
     
 
 #Llamada al modelo de naive bayes
