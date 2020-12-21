@@ -140,16 +140,16 @@ def tfidf_model(bow, doc_id, dictionary, path_glosario, path_results):
 def word2vec_model(bow, doc_id, path_glosario, path_results):
     
     bow = clean_docs(bow)
-    w2v_model = models.Word2Vec(bow, size=100, window=5, sg=1, workers=4)
+    w2v_model = models.Word2Vec(bow, size=20, window=3, sg=1, workers=4)
 
     doc_vec = []
     for doc in bow:
         embeddings = []
         for tok in doc:
-            if tok in w2v_model.wv.vocab:
-                embeddings.append(w2v_model.wv.word_vec(tok))
+            if tok in w2v_model.wv:
+                embeddings.append(w2v_model.wv[tok])
             else:
-                embeddings.append(np.random.rand(100))
+                embeddings.append(np.random.rand(20))
 
         embeddings = np.mean(embeddings, axis=0)
         doc_vec.append(embeddings)
@@ -164,10 +164,10 @@ def word2vec_model(bow, doc_id, path_glosario, path_results):
         
         embedded_glosario=[]
         for tok in glosario:
-            if tok in w2v_model.wv.vocab:
-                embedded_glosario.append(w2v_model.wv.word_vec(tok))
+            if tok in w2v_model.wv:
+                embedded_glosario.append(w2v_model.wv[tok])
             else:
-                embedded_glosario.append(np.random.rand(100))
+                embedded_glosario.append(np.random.rand(20))
 
         embedded_glosario = np.mean(embedded_glosario, axis=0)
 
