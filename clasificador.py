@@ -137,7 +137,6 @@ def tfidf_model(bow, doc_id, dictionary, path_glosario, path_results):
     guardar_clasificacion(max_values, doc_id, path_results + "/Clasificacion/tfidf.txt")
     guardar_evaluacion(max_values, path_results + "/Evaluacion/tfidf_eval.txt")
       
-      
 
 def get_embeddings_from_document(model, g):
     embeddings = []
@@ -151,97 +150,38 @@ def get_embeddings_from_document(model, g):
     mean = np.mean(embeddings, axis = 0) if embeddings != [] else np.zeros(10)
     return mean
     
-      
-      
-      
+        
 def word2vec_model(bow, doc_id, path_glosario, path_results):
     glosario = []
+    glosario_id =[]
     tokens_glosario = []
     bow = clean_docs(bow)
     
+    i=0
     for filename in os.listdir(path_glosario):
         f2 = open(path_glosario + filename, "r")
         glosario += [f2.read()]
+        glosario_id.append(filename)
+        i+=1
     
     for g in glosario:
         tokens_glosario += [wordpunct_tokenize(g)]
-        
-    #print(tokens_glosario)
     
     w2v_model = models.Word2Vec(sentences = tokens_glosario, size=10, window=3, sg=1, workers=4, min_count = 1)
-    #print(w2v_model.wv.vocab)
-
         
-    vectorized_docs = [get_embeddings_from_document(w2v_model, g) for g in tokens_glosario]
-    query_embedding = [get_embeddings_from_document(w2v_model, b) for b in bow]
-    """print(vectorized_docs)
-    print(query_embedding)"""
+    query_embedding = [get_embeddings_from_document(w2v_model, g) for g in tokens_glosario]
+    vectorized_docs = [get_embeddings_from_document(w2v_model, b) for b in bow]    
     
-    
-    for i, g in enumerate(vectorized_docs):
+    for i, g in enumerate(query_embedding):
         similarities = []
-        for j, doc in enumerate(query_embedding):
-        
+        for j, doc in enumerate(vectorized_docs):
             cs = cosine_similarity(np.array(g).reshape(1,-1),np.array(doc).reshape(1, -1))
-           
-            #print(g)
             similarities.append((cs[0][0]))
         print(similarities, '\n\n')
-        #print(doc)
+        path_res_glosario = path_results+ "word2vec/word2vec_" + glosario_id[i]
+        guardar_resultados(similarities, doc_id, path_res_glosario)
+    
 
-    #print(cs_list, '\n\n')
-        
-    #similarity = cosine_similarity(np.array(query_embedding).reshape(1,-1), np.array(vectorized_docs).reshape(1,-1)).item()
-    
-    
-    
-    """doc_vec = []
-    for doc in bow:
-        embeddings = []
-        for tok in doc:
-            if tok in w2v_model.wv:
-                embeddings.append(w2v_model.wv[tok])
-            else:
-                embeddings.append(np.random.rand(10))
-
-        embeddings = np.mean(embeddings, axis=0)
-        doc_vec.append(embeddings)
-    
-    cs_list = []
-    
-    #cv = CountVectorizer(strip_accents = None, preprocessor = None, stop_words = None)
-    for filename in os.listdir(path_glosario):
-        glosario2 = []
-        
-        f2 = open(path_glosario + filename, "r")
-        glosario2 = f2.read()
-        glosario2 = wordpunct_tokenize(glosario2)
-        
-        embedded_glosario=[]
-        for tok in glosario2:
-            if tok in w2v_model.wv:
-                embedded_glosario.append(w2v_model.wv[tok])
-            else:
-                embedded_glosario.append(np.random.rand(10))
-
-        embedded_glosario = np.mean(embedded_glosario, axis=0)
-
-        cs_list=[]
-        for i,d_vec in enumerate(doc_vec):
-            cs = cosine_similarity(np.array(embedded_glosario).reshape(1,-1),np.array(d_vec).reshape(1, -1))
-            cs_list.append((i,cs[0][0]))
-
-        print(cs_list, '\n\n')
-        
-        path_res_glosario = path_results+ "word2vec/word2vec_" + filename
-        guardar_resultados(cs_list, doc_id, path_res_glosario)
-        #final[cambiar_singlelabel(filename[:-13])] = sims.tolist()
-"""
-    
-    
-    
-    
-    
 #Llamada al modelo de naive bayes
 def naivebayes_model(bow, doc_id, path_glosario, path_results):
     doc_train = []
