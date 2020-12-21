@@ -125,8 +125,9 @@ def tfidf_model(bow, doc_id, dictionary, path_glosario, path_results):
         final[cambiar_singlelabel(filename[:-13])] = sims.tolist()
 
     max_values['Documento'] = doc_id
+    max_values['Real'] = cambiar_label([i[:-2] for i in doc_id])
     max_values['Valor'] = final.max(axis = 1)
-    max_values['Clase'] = final.idxmax(axis=1)
+    max_values['Predicciones'] = final.idxmax(axis=1)
     guardar_clasificacion(max_values, doc_id, path_results + "/Clasificacion/tfidf.txt")
 
       
@@ -175,9 +176,9 @@ def naivebayes_model(bow, doc_id, path_glosario, path_results):
     final = pd.DataFrame(prediction_probabilities)
     
     max_values['Documento'] = doc_id
+    max_values['Real'] = cambiar_label([i[:-2] for i in doc_id])
     max_values['Valor'] = final.max(axis = 1)
-    max_values['Clase'] = predictions
-    #max_values['Clase'] = final.idxmax(axis=1)
+    max_values['Predicciones'] = predictions
     guardar_clasificacion(max_values, doc_id, path_results + "/Clasificacion/NaiveBayes.txt")
 
 
@@ -191,11 +192,11 @@ def naivebayes_model(bow, doc_id, path_glosario, path_results):
 #PRUEBA CAMBIAR DE SITIO LUEGO
 def cambiar_label(label):
     for j,l in enumerate(label):
-        if l == temas[0]:
+        if l.capitalize() == temas[0]:
             label[j] = 0
-        elif l == temas[1]:
+        elif l.capitalize() == temas[1]:
             label[j] = 1
-        elif l == temas[2]:
+        elif l.capitalize() == temas[2]:
             label[j] = 2
     return label
 
