@@ -23,6 +23,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction import text 
 from nltk.tokenize.treebank import TreebankWordDetokenizer
+from evaluator import get_evaluation
 
 ## ESTABLECIDOS POR EL USUARIO ##
 directorio =""
@@ -91,7 +92,11 @@ def guardar_resultados(ranking, doc_id, path_results):
 def guardar_clasificacion(dataframe, doc_id, path_clasificacion):
 
     np.savetxt(path_clasificacion, dataframe.values, fmt='%s')
+    
 
+def guardar_evaluacion(dataframe, path_evaluacion):
+    get_evaluation(dataframe, path_evaluacion, temas)
+    
     
 #####################################
 # MODELOS A UTILIZAR EN EL PROYECTO #
@@ -129,7 +134,7 @@ def tfidf_model(bow, doc_id, dictionary, path_glosario, path_results):
     max_values['Valor'] = final.max(axis = 1)
     max_values['Predicciones'] = final.idxmax(axis=1)
     guardar_clasificacion(max_values, doc_id, path_results + "/Clasificacion/tfidf.txt")
-
+    guardar_evaluacion(max_values, path_results + "/Evaluacion/tfidf_eval.txt")
       
 def word2vec_model(bow, dictionary, path_glosario, path_results):
        #w2v_vector_size = 100
@@ -150,7 +155,7 @@ def naivebayes_model(bow, doc_id, path_glosario, path_results):
     for filename in os.listdir(path_glosario):
             f = open(path_glosario+filename,"r")
             files = f.read()
-            #Se almacenan todos los documentos en una lista para poder procesarlos conjuntamente
+            # Se almacenan todos los documentos en una lista para poder procesarlos conjuntamente
             doc_train += [files]
             label += [filename[:-13]]
 
@@ -180,6 +185,7 @@ def naivebayes_model(bow, doc_id, path_glosario, path_results):
     max_values['Valor'] = final.max(axis = 1)
     max_values['Predicciones'] = predictions
     guardar_clasificacion(max_values, doc_id, path_results + "/Clasificacion/NaiveBayes.txt")
+    guardar_evaluacion(max_values, path_results + "/Evaluacion/NaiveBayes_eval.txt")
 
 
 ###################################
