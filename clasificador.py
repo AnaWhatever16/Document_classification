@@ -122,15 +122,14 @@ def tfidf_model(bow, doc_id, dictionary, path_glosario, path_results):
         
         path_res_glosario = path_results+ "/tfidf/tfidf_" + filename
         guardar_resultados(sims, doc_id, path_res_glosario)
-        final[filename[:-13]] = sims.tolist()
+        final[cambiar_singlelabel(filename[:-13])] = sims.tolist()
 
     max_values['Documento'] = doc_id
     max_values['Valor'] = final.max(axis = 1)
     max_values['Clase'] = final.idxmax(axis=1)
     guardar_clasificacion(max_values, doc_id, path_results + "/Clasificacion/tfidf.txt")
 
-
-           
+      
 def word2vec_model(bow, dictionary, path_glosario, path_results):
        #w2v_vector_size = 100
        #model_w2v = models.Word2Vec(sentences=texto_limpio, window=5,
@@ -144,6 +143,9 @@ def word2vec_model(bow, dictionary, path_glosario, path_results):
 def naivebayes_model(bow, doc_id, path_glosario, path_results):
     doc_train = []
     label = []
+    #final = pd.DataFrame()
+    max_values = pd.DataFrame()
+    
     for filename in os.listdir(path_glosario):
             f = open(path_glosario+filename,"r")
             files = f.read()
@@ -151,13 +153,7 @@ def naivebayes_model(bow, doc_id, path_glosario, path_results):
             doc_train += [files]
             label += [filename[:-13]]
 
-    for j,l in enumerate(label):
-        if l == temas[0]:
-            label[j] = 0
-        elif l == temas[1]:
-            label[j] = 1
-        elif l == temas[2]:
-            label[j] = 2
+    label = cambiar_label(label)
 
     test = []
     cv = CountVectorizer(strip_accents = None, preprocessor = None, stop_words = None)
@@ -172,14 +168,46 @@ def naivebayes_model(bow, doc_id, path_glosario, path_results):
     naive_bayes = MultinomialNB()
     naive_bayes.fit(doc_train, label)
     predictions = naive_bayes.predict(bow)
+    prediction_probabilities = naive_bayes.predict_proba(bow)
     path_res_glosario = path_results+ "/Naive-Bayes/naivesbayes_results.txt"
     guardar_resultados(predictions, doc_id, path_res_glosario)
+    
+    final = pd.DataFrame(prediction_probabilities)
+    
+    max_values['Documento'] = doc_id
+    max_values['Valor'] = final.max(axis = 1)
+    max_values['Clase'] = predictions
+    #max_values['Clase'] = final.idxmax(axis=1)
+    guardar_clasificacion(max_values, doc_id, path_results + "/Clasificacion/NaiveBayes.txt")
 
 
 ###################################
 # MÉTODOS PARA PREPROCESAR TEXTOS #
 ###################################
 
+
+#THIS IS A TEST, CHANGE LOCATION
+
+#PRUEBA CAMBIAR DE SITIO LUEGO
+def cambiar_label(label):
+    for j,l in enumerate(label):
+        if l == temas[0]:
+            label[j] = 0
+        elif l == temas[1]:
+            label[j] = 1
+        elif l == temas[2]:
+            label[j] = 2
+    return label
+
+def cambiar_singlelabel(l):
+    if l == temas[0]:
+            l = 0
+    elif l == temas[1]:
+            l = 1
+    elif l == temas[2]:
+            l = 2
+    return l
+    
 #Limpieza de los textos, se aplica un stemmer, se tokenizan las palabras, se eliminan las palabras de parada (stop_words)
 # del documento creado a mano, si la palabra no tiene mayor longitud que 2, tambien se considera no relevante.
 def clean_docs(docs):
