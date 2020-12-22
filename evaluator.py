@@ -21,7 +21,7 @@ def get_evaluation(results, path_evaluacion, temas):
     cm = confusion_matrix(results['Real'], results['Predicciones'])
     sns.heatmap(cm, square=True, annot=True, cmap='RdBu', cbar=False,
     xticklabels = temas, yticklabels=temas)
-    plt.xlabel('Clases reales')
-    plt.ylabel('Predicciones de clases')
+    plt.ylabel('Clases reales')
+    plt.xlabel('Predicciones de clases')
     plt.show()
 
