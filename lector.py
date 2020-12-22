@@ -14,7 +14,7 @@ from collections import Counter
 from crear_corpus import pre_procesar_texto
 
 ## ESTABLECIDOS POR EL USUARIO ##
-n = 15;
+n = 15
 out = os.getcwd()
 glosario = 0
 modo = 0
