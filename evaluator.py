@@ -1,4 +1,4 @@
-# Comprobar los resultados y calcular la precisión y exhaustividad de los métodos.
+# Comprobar los resultados y calcular la precision y exhaustividad de los metodos.
 from sklearn.metrics import accuracy_score, precision_score, recall_score
 import pandas as pd
 from sklearn.metrics import confusion_matrix

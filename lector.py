@@ -1,6 +1,6 @@
 # Autores: Ana Casado y Ana Sanmartin
 #
-# Este script recoge datos de la línea de comandos introducido por el usuario.
+# Este script recoge datos de la linea de comandos introducido por el usuario.
 
 #Dependencias son:
 #
@@ -27,7 +27,7 @@ def main(directorio, n, modo):
     path = ""
     x = 'frecuencia'
     
-    # En esta función lo que se realizará es obtener los nombres de los documentos presentes en las carpetas
+    # En esta funcion lo que se realizara es obtener los nombres de los documentos presentes en las carpetas
     # llamadas 'Deporte', 'Politica', 'Salud'.
     
     for i in temas:
@@ -64,23 +64,23 @@ def get_modo(modo):
 # PROGRAMA PRINCIPAL #
 ######################
 
-# Argparse - Parámetros a ser introducidos por el usuario
+# Argparse - Parametros a ser introducidos por el usuario
 parser = argparse.ArgumentParser(description="Search by terms")
 
 parser.add_argument('-d',
                     "--directorio",
                     type=str,
-                    help="Directorio general donde se encuentran las carpetas con los textos a procesar. El path debe de ser desde la raíz hasta la carpeta Documentos. Ej: .../Document_classification/Documentos")
+                    help="Directorio general donde se encuentran las carpetas con los textos a procesar. El path debe de ser desde la raiz hasta la carpeta Documentos. Ej: .../Document_classification/Documentos")
                     
 parser.add_argument('-n',
                     "--n",
                     type=int,
-                    help="Número de documentos a procesar para el glosario")
+                    help="Numero de documentos a procesar para el glosario")
                     
 parser.add_argument('-m',
                     "--modo",
                     type=int,
-                    help="Aplicación de lemmalization, stemmer o nada. Para aplicarlo introducir el número correspondiente: 0 = lemmalization, 1 = stemmer, 2 = no aplicar nada")
+                    help="Aplicacion de lemmalization, stemmer o nada. Para aplicarlo introducir el numero correspondiente: 0 = lemmalization, 1 = stemmer, 2 = no aplicar nada")
 
                     
 
@@ -90,7 +90,7 @@ arguments = vars(parser.parse_args())
 if arguments['directorio']:
     directorio = arguments['directorio']
 else:
-    print("ERROR: Porfavor introduzca palabras válidas")
+    print("ERROR: Porfavor introduzca palabras validas")
     exit()
 if arguments['n']:
     if arguments['n'] > 0:
@@ -102,7 +102,7 @@ if arguments['modo']:
     if arguments['modo'] > 0 and arguments['modo'] < 3:
         modo = arguments['modo']
     else:
-        print("ERROR: Introduzca un valor válido entre 0 y 2")
+        print("ERROR: Introduzca un valor valido entre 0 y 2")
         exit()
 
 main(directorio, n, modo)

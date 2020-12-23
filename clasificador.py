@@ -1,6 +1,6 @@
-# Autores: Ana María Casado y Ana Sanmartin
+# Autores: Ana Maria Casado y Ana Sanmartin
 #
-# Este script recoge datos de la línea de comandos introducido por el usuario.
+# Este script recoge datos de la linea de comandos introducido por el usuario.
 
 #Dependencias son:
 #
@@ -45,7 +45,7 @@ def clasificador_documentos(directorio, n_min, rango, modelo):
     for line in sw: 
         STOP_WORDS.append(line.strip()) 
 
-    # En esta función lo que se realizará es cargar los documentos a analizar en una lista
+    # En esta funcion lo que se realizara es cargar los documentos a analizar en una lista
     
     path_results = directorio + "/Resultados/"
     path_glosario = directorio + "/Glosario/"
@@ -70,7 +70,7 @@ def clasificador_documentos(directorio, n_min, rango, modelo):
         dictionary = None
         bow = doc
     
-    # Dependiendo del modelo a utilizar se llamará a las funciones X_model
+    # Dependiendo del modelo a utilizar se llamara a las funciones X_model
     lanzar_clasificador(bow, doc_id, dictionary, path_glosario, path_results, modelo)
 
 
@@ -81,7 +81,7 @@ def clasificador_documentos(directorio, n_min, rango, modelo):
 def guardar_resultados(ranking, doc_id, path_results):
     # Guardar txt con los documentos y los 3 valores para cada glosario
     # Mostrar por pantalla
-    # Por modelo, ppppprecisión (relevantes/recuperados) y exhaustividad (los que son/los relevantes)
+    # Por modelo, ppppprecision (relevantes/recuperados) y exhaustividad (los que son/los relevantes)
     # Dibujitos
 
     res = open(path_results, "w")
@@ -103,7 +103,7 @@ def guardar_evaluacion(dataframe, path_evaluacion):
 # MODELOS A UTILIZAR EN EL PROYECTO #
 #####################################
 
-#Dependiendo del valor de la variable modelo, la función lanzar_clasificador utilizará la llamada al proceso correspondiente    
+#Dependiendo del valor de la variable modelo, la funcion lanzar_clasificador utilizara la llamada al proceso correspondiente    
 def lanzar_clasificador(bow, doc_id, dictionary, path_glosario, path_results, m):
     if(m == 0):
         tfidf_model(bow, doc_id, dictionary, path_glosario, path_results)
@@ -235,7 +235,7 @@ def naivebayes_model(bow, doc_id, path_glosario, path_results):
 
 
 ###################################
-# MÉTODOS PARA PREPROCESAR TEXTOS #
+# MeTODOS PARA PREPROCESAR TEXTOS #
 ###################################
 
 
@@ -299,7 +299,7 @@ def create_bow_from_corpus(corpus, dictionary, pathname=None):
         corpora.MmCorpus.serialize(pathname+'/vsm_docs.mm', bow)
     return bow
     
-#Realización del pre-proceso de los textos
+#Realizacion del pre-proceso de los textos
 def process_text(docs, dictionary):
     corpus = clean_docs(docs)
     bow = create_bow_from_corpus(corpus, dictionary)
@@ -307,26 +307,26 @@ def process_text(docs, dictionary):
 
 
 ###########################################
-# MÉTODOS PARA OBTENER DATOS POR PANTALLA #
+# MeTODOS PARA OBTENER DATOS POR PANTALLA #
 ###########################################
 
-# Argparse - Parámetros a ser introducidos por el usuario
+# Argparse - Parametros a ser introducidos por el usuario
 parser = argparse.ArgumentParser(description="Search by terms")
 
 parser.add_argument('-d',
                     "--directorio",
                     type=str,
-                    help="Directorio general donde se encuentran las carpetas con los textos a procesar. El path debe de ser desde la raíz hasta la carpeta Documentos. Ej: .../Document_classification/Documentos")
+                    help="Directorio general donde se encuentran las carpetas con los textos a procesar. El path debe de ser desde la raiz hasta la carpeta Documentos. Ej: .../Document_classification/Documentos")
                     
 parser.add_argument('-n',
                     "--nmin",
                     type=int,
-                    help="Posición a partir de la cual se utilizarán los documentos (Por ejemplo, a partir del documento 16)")
+                    help="Posicion a partir de la cual se utilizaran los documentos (Por ejemplo, a partir del documento 16)")
                     
 parser.add_argument('-r',
                     "--rango",
                     type=int,
-                    help="Número de documentos totales a utilizar para la clasificación de test (Por ejemplo si deseamos 15 documentos, del 16 al 30)")
+                    help="Numero de documentos totales a utilizar para la clasificacion de test (Por ejemplo si deseamos 15 documentos, del 16 al 30)")
                                         
 parser.add_argument('-m',
                     "--modelo",
@@ -340,7 +340,7 @@ arguments = vars(parser.parse_args())
 if arguments['directorio']:
     directorio = arguments['directorio']
 else:
-    print("ERROR: Porfavor introduzca palabras válidas para el directorio")
+    print("ERROR: Porfavor introduzca palabras validas para el directorio")
     exit()
 if arguments['nmin']:
     if arguments['nmin'] > 0:
@@ -352,13 +352,13 @@ if arguments['rango']:
     if arguments['rango'] > 0:
         modo = arguments['rango']
     else:
-        print("ERROR: Introduzca un valor válido mayor que 0")
+        print("ERROR: Introduzca un valor valido mayor que 0")
         exit()
 if arguments['modelo']:
     if arguments['modelo'] > 0 and arguments['modelo'] < 3:
         modelo = arguments['modelo']
     else:
-        print("ERROR: Introduzca un valor válido mayor que 0 y menor que 2 para un modelo válido")
+        print("ERROR: Introduzca un valor valido mayor que 0 y menor que 2 para un modelo valido")
         exit()
 
 clasificador_documentos(directorio, nmin, rango, modelo)

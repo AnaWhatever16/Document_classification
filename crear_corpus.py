@@ -10,7 +10,7 @@ def pre_procesar_texto(texto: str, mode: str):
     path = os.getcwd()
     stop_words = []
     
-    #Eliminación de los stopwords
+    #Eliminacion de los stopwords
     nlp = spacy.load('es_core_news_sm') # Carga del modelo
     f = open(path +"/stop_words.txt","r")
 
@@ -22,7 +22,7 @@ def pre_procesar_texto(texto: str, mode: str):
     
     
     
-    #Tokenización y limpieza del texto
+    #Tokenizacion y limpieza del texto
     
     doc = nlp(texto) # Crea un objeto de spacy tipo nlp
     tokens = [token for token in doc if not token.is_punct and len(token) > 2]
@@ -36,6 +36,6 @@ def pre_procesar_texto(texto: str, mode: str):
         #spanishstemmer=SnowballStemmer('spanish')
         #clean = [spanishstemmer.stem(token) for token in clean]
     return clean
-    #Aquí es dónde escogemos las palabras referentes. Se analizarán dos métodos diferentes, la proporción de aparición de una palabra y la tf-idf.
+    #Aqui es donde escogemos las palabras referentes. Se analizaran dos metodos diferentes, la proporcion de aparicion de una palabra y la tf-idf.
 
         
