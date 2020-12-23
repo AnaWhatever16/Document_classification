@@ -1,3 +1,8 @@
+# Autores: Ana Maria Casado y Ana Sanmartin
+#
+# Este script instala en el sistema todas las dependencias necesarias para poder ejecutar los programas
+
+# Paquetes necesarios para el funcionamiento del programa
 import os
 
 #Lista de paquetes a instalar
