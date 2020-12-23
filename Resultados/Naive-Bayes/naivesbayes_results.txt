@@ -12,6 +12,7 @@ deportes26 0
 deportes27 0
 deportes28 0
 deportes29 0
+deportes30 0
 politica16 0
 politica17 1
 politica18 1
@@ -26,6 +27,7 @@ politica26 1
 politica27 1
 politica28 1
 politica29 1
+politica30 1
 salud16 2
 salud17 2
 salud18 2
@@ -40,3 +42,4 @@ salud26 2
 salud27 2
 salud28 2
 salud29 2
+salud30 2

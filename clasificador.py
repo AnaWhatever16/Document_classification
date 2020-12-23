@@ -54,7 +54,7 @@ def clasificador_documentos(directorio, n_min, rango, modelo):
     doc_id = []
     for i in temas:
         path = directorio + "/Documentos/" + i + "/"
-        for j in range(n_min, n_min + rango -1):
+        for j in range(n_min, n_min + rango):
             f = open(path + i.lower() + str(j) + ".txt","r")
             files = f.read()
            #Se almacenan todos los documentos en una lista para poder procesarlos conjuntamente
