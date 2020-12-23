@@ -284,7 +284,6 @@ def create_dictionary(path_glosario, pathname= None):
     for filename in os.listdir(path_glosario):
         f2 = open(path_glosario + filename, "r")
         glosario = f2.read()
-        #glosario_clean =  wordpunct_tokenize(glosario) ## GUARDAR LOS TRES DICCIONARIOS JUNTOS!!!
         tokens = [word for word in glosario.split()]
         dictionary.add_documents([tokens])
 
