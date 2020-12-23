@@ -15,7 +15,7 @@ def pre_procesar_texto(texto: str, mode: str):
     stop_words = []
     
     #Eliminacion de los stopwords
-    #nlp = spacy.load('es_core_news_sm') # Se decidió no utilizar las stopwords de spacy porque nos parecían incompletas
+    #nlp = spacy.load('es_core_news_sm') # Se decidio no utilizar las stopwords de spacy porque nos parecian incompletas
     f = open(path +"/stop_words.txt","r") #Usamos nuestras propias stopwords
 
     sw = f.readlines()

@@ -1,7 +1,7 @@
 # Autores: Ana Maria Casado y Ana Sanmartin
 #
-# Este script se encarga recoger el directorio de trabajo, el número de documentos a procesar, 
-# y generar el modelo que se utilizará para la clasificación.
+# Este script se encarga recoger el directorio de trabajo, el numero de documentos a procesar, 
+# y generar el modelo que se utilizara para la clasificacion.
 
 # Paquetes necesarios para el funcionamiento del programa
 import os
@@ -34,12 +34,12 @@ temas = ["Deportes", "Politica", "Salud"]
 
 def clasificador_documentos(directorio, n_min, rango, modelo):
     """
-    Esta función recibe los datos que ha introducido el usuario y llama a otros metodos
-    para la creación de los modelos
+    Esta funcion recibe los datos que ha introducido el usuario y llama a otros metodos
+    para la creacion de los modelos
     
-    directorio = directorio de trabajo, path desde la raíz hasta .../Documentation_classification
-    n_min = número del documento mas bajo a ser analizado
-    rango = número de documentos a ser analizados
+    directorio = directorio de trabajo, path desde la raiz hasta .../Documentation_classification
+    n_min = numero del documento mas bajo a ser analizado
+    rango = numero de documentos a ser analizados
     modelo = la clase de modelo que se utilizara en el procesamiento
     """
     
@@ -68,7 +68,7 @@ def clasificador_documentos(directorio, n_min, rango, modelo):
             doc += [files]
             doc_id += [i.lower() + str(j)]
             
-    #Si el modelo es tfidf, se creará un Bag of ords (BoW)
+    #Si el modelo es tfidf, se creara un Bag of ords (BoW)
     if(modelo == 0):
         dictionary = create_dictionary(path_glosario)
         #Pre-procesamiento de los documentos de test para generar un BoW  
@@ -90,7 +90,7 @@ def clasificador_documentos(directorio, n_min, rango, modelo):
 
 def guardar_resultados(ranking, doc_id, path_results):
     """
-    Esta función recibe los resultados de los modelos, los nombres de los documentos y
+    Esta funcion recibe los resultados de los modelos, los nombres de los documentos y
     un path donde almacenarlos. Se encarga de almacenar las matrices de salida de los resultados
     
     ranking = Matriz con las predicciones de pertenencia de documentos a una clase
@@ -108,7 +108,7 @@ def guardar_resultados(ranking, doc_id, path_results):
 
 def guardar_clasificacion(dataframe, doc_id, path_clasificacion):
     """
-    Esta función recibe las clasificaciones finales realizadas por los modelos, los nombres de los documentos
+    Esta funcion recibe las clasificaciones finales realizadas por los modelos, los nombres de los documentos
     y el path donde almacenarlos. Se encarga de almacenar las matrices de salida de las clasificaciones.
     
     dataframe = Matriz con las predicciones finales clasificadas de pertenencia de documentos a una clase
@@ -120,7 +120,7 @@ def guardar_clasificacion(dataframe, doc_id, path_clasificacion):
 
 def guardar_evaluacion(dataframe, path_evaluacion):
     """
-    Esta función recibe las clasificaciones finales realizadas por los modelos y el path donde se almacenara
+    Esta funcion recibe las clasificaciones finales realizadas por los modelos y el path donde se almacenara
     los valores para evaluar la bondad de los modelos. Se encarga de llamar a otro script. 
     
     dataframe = Matriz con las predicciones finales clasificadas de pertenencia de documentos a una clase
@@ -140,7 +140,7 @@ def guardar_evaluacion(dataframe, path_evaluacion):
 #Dependiendo del valor de la variable modelo, la funcion lanzar_clasificador utilizara la llamada al proceso correspondiente    
 def lanzar_clasificador(bow, doc_id, dictionary, path_glosario, path_results, m):
     """
-    Esta función recibe el documento o el BoW, el diccionario, el path donde se encuentran almacenados los glosarios
+    Esta funcion recibe el documento o el BoW, el diccionario, el path donde se encuentran almacenados los glosarios
     el path donde se almacenaran los resultados y el tipo de modelo a crear. Se encarga de llamar al modelo correspondiente.
     
     bow = Textos a ser analizados
@@ -161,7 +161,7 @@ def lanzar_clasificador(bow, doc_id, dictionary, path_glosario, path_results, m)
         
 def tfidf_model(bow, doc_id, dictionary, path_glosario, path_results):
     """
-    Esta función recibe el documento o el BoW, los nombres de los documentos, el diccionario, el path donde se encuentran almacenados los glosarios
+    Esta funcion recibe el documento o el BoW, los nombres de los documentos, el diccionario, el path donde se encuentran almacenados los glosarios
     el path donde se almacenaran los resultados. Se encarga de generar y aplicar el modelo doc2bow con tfidf.
     
     bow = Textos a ser analizados
@@ -207,7 +207,7 @@ def tfidf_model(bow, doc_id, dictionary, path_glosario, path_results):
 
 def get_embeddings_from_document(model, g):
     """
-    Esta función recibe el modelo y una lista de palabras. Se encarga de calcular la media de los embeddings que existan
+    Esta funcion recibe el modelo y una lista de palabras. Se encarga de calcular la media de los embeddings que existan
     tanto en el modelo como en la lista de palabras
     
     model = modelo creado
@@ -216,7 +216,7 @@ def get_embeddings_from_document(model, g):
     
     embeddings = []
     
-    #para cada palabra de la lista, si la palabra esta presente en el modelo añadirla a la lista embeddings
+    #para cada palabra de la lista, si la palabra esta presente en el modelo annadirla a la lista embeddings
     for word in g:
         #print(g)
         if word in model.wv:
@@ -230,7 +230,7 @@ def get_embeddings_from_document(model, g):
         
 def word2vec_model(bow, doc_id, path_glosario, path_results):
     """
-    Esta función recibe el documento o el BoW, los nombres de los documentos, el path donde se encuentran almacenados los glosarios
+    Esta funcion recibe el documento o el BoW, los nombres de los documentos, el path donde se encuentran almacenados los glosarios
     el path donde se almacenaran los resultados. Se encarga de generar y aplicar el modelo word2vec.
     
     bow = Textos a ser analizados
@@ -292,7 +292,7 @@ def word2vec_model(bow, doc_id, path_glosario, path_results):
 #Llamada al modelo de naive bayes
 def naivebayes_model(bow, doc_id, path_glosario, path_results):
     """
-    Esta función recibe el documento o el BoW, los nombres de los documentos, el path donde se encuentran almacenados los glosarios
+    Esta funcion recibe el documento o el BoW, los nombres de los documentos, el path donde se encuentran almacenados los glosarios
     el path donde se almacenaran los resultados. Se encarga de generar y aplicar el modelo Naive Bayes.
     
     bow = Textos a ser analizados
@@ -361,7 +361,7 @@ def naivebayes_model(bow, doc_id, path_glosario, path_results):
 
 def cambiar_label(label):
     """
-    Esta función recibe una lista de palabras. Se encarga de transformar los elementos de la lista en numeros 
+    Esta funcion recibe una lista de palabras. Se encarga de transformar los elementos de la lista en numeros 
     representando una clase.
     
     label = Lista de palabras
@@ -378,7 +378,7 @@ def cambiar_label(label):
 
 def cambiar_singlelabel(l):
     """
-    Esta función recibe una palabras. Se encarga de transformar una palabra en im numero 
+    Esta funcion recibe una palabras. Se encarga de transformar una palabra en im numero 
     representando una clase.
     
     label = palabras
@@ -396,7 +396,7 @@ def cambiar_singlelabel(l):
 
 def clean_docs(docs):
     """
-    Esta función recibe una lista con documentos. Se encarga de limpiar una lista de texto.
+    Esta funcion recibe una lista con documentos. Se encarga de limpiar una lista de texto.
     
     docs = lista con el texto de los documentos
     """
@@ -422,7 +422,7 @@ def clean_docs(docs):
 
 def create_dictionary(path_glosario, pathname= None):
     """
-    Esta función recibe el path donde se encuentran los glosarios. Se encarga de convertir los textos en un diccionario 
+    Esta funcion recibe el path donde se encuentran los glosarios. Se encarga de convertir los textos en un diccionario 
     y los almacena en corpus 
     
     path_glosario = path donde se encuentra almacenado el glosario
@@ -445,7 +445,7 @@ def create_dictionary(path_glosario, pathname= None):
     
 def create_bow_from_corpus(corpus, dictionary, pathname=None):
     """
-    Esta función recibe un corpus creado a partir del glosario y un diccionario a partir del glosario.
+    Esta funcion recibe un corpus creado a partir del glosario y un diccionario a partir del glosario.
     Se encarga de transformar un diccionario en una Bag of Words (BoW)
     
     corpus = lista de documentos
@@ -464,7 +464,7 @@ def create_bow_from_corpus(corpus, dictionary, pathname=None):
 #Realizacion del pre-proceso de los textos
 def process_text(docs, dictionary):
     """
-    Esta función recibe una la lista de documentos y el diccionario creado por corpora
+    Esta funcion recibe una la lista de documentos y el diccionario creado por corpora
     Se encarga de procesar los documentos y crear un bow del corpus a partir de los documentos y el diccionario llamando
     a la funcion create_bow_from_corpus.
     
