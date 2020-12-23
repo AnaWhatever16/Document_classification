@@ -235,7 +235,7 @@ def naivebayes_model(bow, doc_id, path_glosario, path_results):
 
 
 ###################################
-# MeTODOS PARA PREPROCESAR TEXTOS #
+# METODOS PARA PREPROCESAR TEXTOS #
 ###################################
 
 
@@ -307,7 +307,7 @@ def process_text(docs, dictionary):
 
 
 ###########################################
-# MeTODOS PARA OBTENER DATOS POR PANTALLA #
+# METODOS PARA OBTENER DATOS POR PANTALLA #
 ###########################################
 
 # Argparse - Parametros a ser introducidos por el usuario
