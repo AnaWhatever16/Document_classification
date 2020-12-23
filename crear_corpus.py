@@ -1,5 +1,9 @@
-import spacy
+# Autores: Ana Maria Casado y Ana Sanmartin
+#
+# Este script de realizar el preprocesamiento de los textos tokenizando y limpiando el texto.
 
+# Paquetes necesarios para el funcionamiento del programa
+import spacy
 import nltk
 from nltk import SnowballStemmer
 import os
@@ -11,8 +15,8 @@ def pre_procesar_texto(texto: str, mode: str):
     stop_words = []
     
     #Eliminacion de los stopwords
-    nlp = spacy.load('es_core_news_sm') # Carga del modelo
-    f = open(path +"/stop_words.txt","r")
+    #nlp = spacy.load('es_core_news_sm') # Se decidió no utilizar las stopwords de spacy porque nos parecían incompletas
+    f = open(path +"/stop_words.txt","r") #Usamos nuestras propias stopwords
 
     sw = f.readlines()
 
@@ -20,22 +24,19 @@ def pre_procesar_texto(texto: str, mode: str):
     for line in sw: 
         stop_words.append(line.strip()) 
     
-    
-    
     #Tokenizacion y limpieza del texto
     
     doc = nlp(texto) # Crea un objeto de spacy tipo nlp
-    tokens = [token for token in doc if not token.is_punct and len(token) > 2]
-    clean = [token for token in tokens if not str(token) in stop_words and not isinstance(token, int)]
+    tokens = [token for token in doc if not token.is_punct and len(token) > 2] # Convierte las palabras en tokens
+    clean = [token for token in tokens if not str(token) in stop_words and not isinstance(token, int)] #Elimina las stopwords del texto
     
     if(mode == 'lema'):
         clean = [token.lemma_.lower() for token in clean]
 
-    elif(mode == 'stem'):
+    elif(mode == 'stem'): 
         pass
-        #spanishstemmer=SnowballStemmer('spanish')
-        #clean = [spanishstemmer.stem(token) for token in clean]
+        spanishstemmer=SnowballStemmer('spanish')
+        clean = [spanishstemmer.stem(token) for token in clean]
     return clean
-    #Aqui es donde escogemos las palabras referentes. Se analizaran dos metodos diferentes, la proporcion de aparicion de una palabra y la tf-idf.
 
         

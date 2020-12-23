@@ -1,12 +1,8 @@
-# Autores: Ana Casado y Ana Sanmartin
+# Autores: Ana Maria Casado y Ana Sanmartin
 #
 # Este script recoge datos de la linea de comandos introducido por el usuario.
 
-#Dependencias son:
-#
-#
-
-# IMPORTS 
+# Paquetes necesarios para el funcionamiento del programa 
 import os
 import argparse
 import pandas as pd
@@ -46,13 +42,13 @@ def main(directorio, n, modo):
        if(x == 'tfidf'):
            pass
            
+    # Albergar en un documento los textos correspondientes a cada glosario.
        f2 = open(directorio + "/Pre-Glosario/" + i + ".txt","w+") 
        f2.write(str(common_words))
        f2.close()
-    # Albergar en un documento los textos correspondientes a cada glosario.
     
    
- 
+# Funcion que determina el tipo de preprocesamiento del texto 
 def get_modo(modo):
    switcher = {
        0 : 'lema',

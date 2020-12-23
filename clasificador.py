@@ -3,9 +3,7 @@
 # Este script se encarga recoger el directorio de trabajo, el número de documentos a procesar, 
 # y generar el modelo que se utilizará para la clasificación.
 
-
-
-# Paquetes neecsarios para el funcionamiento del programa
+# Paquetes necesarios para el funcionamiento del programa
 import os
 import argparse
 import pandas as pd
